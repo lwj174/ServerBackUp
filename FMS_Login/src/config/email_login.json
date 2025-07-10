@@ -1,0 +1,15 @@
+{
+"EMAIL":{"user":"liwenjing@myascents.com",
+"password":"wucqnfvygfwucwqi",
+"imap_url":"imap.gmail.com",
+"sender":"noreply@iot-platform.online",
+"server":"smtp.gmail.com",
+"port":587,
+"receiver":"liwenjing@myascents.com"},
+
+"DATABASE":{"db_user":"datauser",
+"db_pw":"hotmouse24",
+"db_host":"192.168.9.230",
+"db_port":3306,
+"database":"DataAnalytics"}
+}

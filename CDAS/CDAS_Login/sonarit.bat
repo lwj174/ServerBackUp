@@ -1,0 +1,1 @@
+sonar-scanner.bat -D"sonar.projectKey=CDAS_Login" -D"sonar.sources=." -D"sonar.host.url=https://sonar.myascents.net" -D"sonar.login=sqp_3258648aa7f2609afa72d44895428f155f1df9ee"

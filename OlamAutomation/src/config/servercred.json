@@ -1,0 +1,16 @@
+{"login":"liwenjing@myascents.com","password":"hI)8eKEJ#8Rl",
+"url_login":"https://wcts.ofi.com/api/auth/login",
+"url_data":"https://wcts.ofi.com/api/cts/1/event/palletEvents",
+"url_data2":"https://wcts.ofi.com/api/cts/1/event/palletPatchSilo",
+"db_user":"datauser",
+"db_pw":"hotmouse24",
+"db_host":"192.168.9.230",
+"db_port":3306,
+"database":"DataAnalytics",
+"EMAIL_ALERT":{"email_server":"liwenjing@myascents.com",
+"password":"wucqnfvygfwucwqi",
+"server":"smtp.gmail.com",
+"port":587,
+"receiver_list":["liwenjing@myascents.com"]}
+
+}

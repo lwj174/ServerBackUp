@@ -1,0 +1,25 @@
+{
+"EMAIL":{"user":"liwenjing@myascents.com",
+"password":"wucqnfvygfwucwqi",
+"imap_url":"imap.gmail.com",
+"sender":"noreply@myascents.com",
+"server":"smtp.gmail.com",
+"port":587,
+"receiver":"liwenjing@myascents.com"},
+
+"DATABASE": {"db_user":"datauser",
+"db_pw":"datauser",
+"db_host":"192.168.9.230",
+"db_port":59140,
+"database":"atlastracking"} ,
+
+"EMAIL_ALERT":{"email_server":"wongzhenyang@myascents.com",
+"password":"uvsjldqwycywnsqq",
+"server":"smtp.gmail.com",
+"port":587,
+"receiver_list":["wongzhenyang@myascents.com"]}
+
+
+
+
+}

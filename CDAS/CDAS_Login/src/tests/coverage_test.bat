@@ -1,0 +1,1 @@
+cmd /k "python -m coverage run -m unittest & coverage report -m & coverage xml"

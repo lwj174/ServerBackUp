@@ -1,0 +1,331 @@
+[2022-11-30 16:47:33,935] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-11-30 16:47:33,935] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-11-30 16:47:34,297] INFO [libCDAS.input_email.extract_msg:26] starting
+[2022-11-30 16:47:34,603] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-11-30 16:47:34,603] INFO [imbox.imbox.mark_seen:58] Mark UID 19603 with \Seen FLAG
+[2022-11-30 17:15:14,673] ERROR [libCDAS.output_db.db_conn:34] Error connecting to MariaDB Platform: Access denied for user 'error_user'@'192.168.9.125' (using password: YES)
+[2022-11-30 17:31:22,258] ERROR [libCDAS.output_db.output_DB:58] Fail to insert data into FMSLoginHist table. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'config/email_login.json'
+[2022-11-30 17:41:28,684] ERROR [libCDAS.output_db.output_DB:56] Fail to insert data into FMSLoginHist table. Error Message: <class 'AttributeError'>'tuple' object has no attribute 'columns'
+[2022-11-30 17:42:42,358] ERROR [libCDAS.output_db.output_DB:56] Fail to insert data into FMSLoginHist table. Error Message: <class 'AttributeError'>'list' object has no attribute 'columns'
+[2022-11-30 17:59:27,400] ERROR [libCDAS.process_data.read_zipfile:24] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'w'
+[2022-11-30 18:01:57,207] ERROR [libCDAS.process_data.read_zipfile:24] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-11-30 23:46:41,684] ERROR [libCDAS.main.main:57] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\main.py", line 27, in main
+    username,password,host,sender=cdas_email.login_cred(cred)
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 17, in login_cred
+    with open(json_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/email_login.jso'
+
+[2022-11-30 23:48:25,494] ERROR [libCDAS.main.main:57] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\main.py", line 27, in main
+    username,password,host,sender=cdas_email.login_cred(cred)
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 17, in login_cred
+    with open(json_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/email_login.jso'
+
+[2022-11-30 23:49:51,701] ERROR [libCDAS.main.main:57] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\main.py", line 27, in main
+    username,password,host,sender=cdas_email.login_cred(cred)
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 17, in login_cred
+    with open(json_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/email_login.jso'
+
+[2022-12-01 00:01:20,492] ERROR [libCDAS.main.main:57] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\main.py", line 27, in main
+    username,password,host,sender=cdas_email.login_cred(cred)
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 17, in login_cred
+    with open(json_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/email_login.jso'
+
+[2022-12-01 00:01:33,717] ERROR [libCDAS.main.main:57] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\main.py", line 27, in main
+    username,password,host,sender=cdas_email.login_cred(cred)
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 17, in login_cred
+    with open(json_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/email_login.jso'
+
+[2022-12-01 00:01:47,471] ERROR [libCDAS.main.main:57] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\main.py", line 27, in main
+    username,password,host,sender=cdas_email.login_cred(cred)
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 17, in login_cred
+    with open(json_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/email_login.jso'
+
+[2022-12-01 00:05:59,736] ERROR [libCDAS.main.main:57] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\main.py", line 27, in main
+    username,password,host,sender=cdas_email.login_cred(cred)
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 17, in login_cred
+    with open(json_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/email_login.jso'
+
+[2022-12-01 00:06:06,277] ERROR [libCDAS.main.main:57] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\main.py", line 27, in main
+    username,password,host,sender=cdas_email.login_cred(cred)
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 17, in login_cred
+    with open(json_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/email_login.jso'
+
+[2022-12-01 00:25:09,136] ERROR [libCDAS.main.main:57] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\main.py", line 27, in main
+    username,password,host,sender=cdas_email.login_cred(cred)
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 17, in login_cred
+    with open(json_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'config/email_login.jso'
+
+[2022-12-01 00:31:06,998] ERROR [libCDAS.output_db.db_conn:37] Error connecting to MariaDB Platform: Access denied for user 'error_user'@'192.168.9.125' (using password: YES)
+[2022-12-01 12:12:39,795] ERROR [libCDAS.output_db.db_conn:37] Error connecting to MariaDB Platform: Access denied for user 'error_user'@'192.168.9.125' (using password: YES)
+[2022-12-01 12:12:54,146] ERROR [libCDAS.output_db.db_conn:37] Error connecting to MariaDB Platform: Access denied for user 'error_user'@'192.168.9.125' (using password: YES)
+[2022-12-01 12:21:18,101] ERROR [libCDAS.process_data.read_zipfile:25] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-12-01 12:28:45,225] ERROR [libCDAS.process_data.read_zipfile:25] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-12-01 12:29:41,828] ERROR [libCDAS.process_data.read_zipfile:25] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-12-01 12:34:30,871] ERROR [libCDAS.process_data.read_zipfile:25] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-12-01 12:34:39,027] ERROR [libCDAS.process_data.read_zipfile:25] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-12-01 12:34:57,364] ERROR [libCDAS.process_data.read_zipfile:25] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-12-01 12:35:05,368] ERROR [libCDAS.process_data.read_zipfile:25] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-12-01 12:35:22,484] ERROR [libCDAS.process_data.read_zipfile:25] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-12-01 12:35:42,894] ERROR [libCDAS.process_data.read_zipfile:25] Error in extracting zipfile. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'wrong_path'
+[2022-12-01 14:21:35,529] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:21:35,539] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:21:36,154] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:21:36,154] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 14:21:36,386] ERROR [libCDAS.input_email.extract_msg:38] None
+[2022-12-01 14:23:01,499] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:23:01,499] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:23:02,159] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:23:02,159] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 14:26:16,896] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:26:16,896] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:26:17,569] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:26:17,569] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 14:27:15,269] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:27:15,279] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:28:05,152] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:28:05,152] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:30:30,960] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:30:30,960] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:30:31,679] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:30:31,679] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 14:30:31,926] ERROR [libCDAS.input_email.extract_msg:38] None
+[2022-12-01 14:31:10,100] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:31:10,100] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:31:10,680] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:31:10,680] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 14:31:10,920] ERROR [libCDAS.input_email.extract_msg:38] None
+[2022-12-01 14:31:49,145] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:31:49,145] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:31:49,775] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:31:49,775] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 14:31:50,010] ERROR [libCDAS.input_email.extract_msg:38] None
+[2022-12-01 14:33:05,915] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:33:05,915] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:33:06,505] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:34:20,269] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:34:20,269] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:56:24,196] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:56:24,196] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:56:24,855] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:56:24,855] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 14:57:20,836] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:57:20,836] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:57:21,545] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:57:21,545] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 14:57:21,836] ERROR [root.extract_msg:38] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 35, in extract_msg
+    with open(download_path, "wb") as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'haha/User Login Report (CDAS)_2022-12-01_09-08.zip'
+
+[2022-12-01 14:58:18,395] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 14:58:18,395] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 14:58:18,993] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 14:58:18,993] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 14:58:19,241] ERROR [root.extract_msg:38] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 35, in extract_msg
+    with open(download_path, "wb") as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'haha/User Login Report (CDAS)_2022-12-01_09-08.zip'
+
+[2022-12-01 15:17:39,675] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:17:39,675] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:17:40,346] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:17:40,346] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:17:40,596] ERROR [root.extract_msg:38] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 35, in extract_msg
+    with open(download_path, "wb") as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'error_path/User Login Report (CDAS)_2022-12-01_09-08.zip'
+
+[2022-12-01 15:18:29,806] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:18:29,806] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:18:30,455] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:18:30,455] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:18:30,711] ERROR [root.extract_msg:38] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 35, in extract_msg
+    with open(download_path, "wb") as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'error_path/User Login Report (CDAS)_2022-12-01_09-08.zip'
+
+[2022-12-01 15:18:58,726] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:18:58,731] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:18:59,346] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:18:59,346] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:18:59,596] ERROR [root.extract_msg:38] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 35, in extract_msg
+    with open(download_path, "wb") as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'error_path/User Login Report (CDAS)_2022-12-01_09-08.zip'
+
+[2022-12-01 15:21:37,156] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:21:37,156] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:21:37,762] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:21:37,762] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:21:38,011] ERROR [root.extract_msg:38] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 35, in extract_msg
+    with open(download_path, "wb") as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'error_path/User Login Report (CDAS)_2022-12-01_09-08.zip'
+
+[2022-12-01 15:21:44,916] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:21:44,916] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:21:45,493] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:21:45,493] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:21:45,736] ERROR [root.extract_msg:38] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\CDAS_Login\src\tests\../../src\libCDAS\input_email.py", line 35, in extract_msg
+    with open(download_path, "wb") as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'error_path/User Login Report (CDAS)_2022-12-01_09-08.zip'
+
+[2022-12-01 15:22:28,136] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:22:28,136] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:24:34,396] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:24:34,396] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:25:05,591] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:25:05,591] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:29:07,386] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:29:07,386] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:29:07,646] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:29:08,215] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:29:08,215] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:29:09,631] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:29:09,631] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:30:25,817] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:30:25,817] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:30:26,096] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:30:26,696] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:30:26,696] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:30:28,250] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:30:28,250] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:31:01,352] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:31:01,366] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:31:01,629] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:31:02,256] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:31:02,256] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:31:03,996] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:31:03,996] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:31:28,696] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:31:28,696] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:31:29,047] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:31:29,650] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:31:29,650] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:31:31,367] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:31:31,367] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:32:02,057] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:32:02,057] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:32:02,324] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:32:02,932] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:32:02,932] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:32:04,336] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:32:04,336] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:32:32,858] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:32:32,858] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:32:33,217] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:32:33,826] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:32:33,826] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:32:35,216] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:32:35,216] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:32:57,896] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:32:57,906] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:32:58,200] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:32:58,876] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:32:58,876] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:33:00,216] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:33:00,216] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:33:29,536] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:33:29,536] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:33:29,786] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:33:30,413] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:33:30,413] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:33:32,116] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:33:32,116] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:33:43,255] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:33:43,255] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:33:43,524] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:33:44,136] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:33:44,136] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:33:45,686] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:33:45,686] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:35:07,226] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:35:07,226] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:35:07,496] ERROR [libCDAS.input_email.download_rpt:52] There is no Login Report today!
+[2022-12-01 15:35:09,031] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:35:09,031] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:37:47,157] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:37:47,157] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:37:48,757] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:37:48,757] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:39:06,636] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:39:06,636] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:39:08,174] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:39:08,174] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:39:52,566] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:39:52,566] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:39:54,126] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:39:54,126] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:39:54,797] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:39:54,797] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:40:33,396] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:40:33,396] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:40:34,986] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:40:34,986] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:40:35,618] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:40:35,618] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:46:02,867] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:46:02,876] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:46:04,574] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:46:04,574] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:46:05,177] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:46:05,177] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:46:09,827] INFO [libCDAS.output_db.output_DB:55] FMSLoginHist table is successfully updated.
+[2022-12-01 15:49:14,672] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:49:14,677] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:50:26,817] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:50:26,817] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:50:28,396] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:50:28,396] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:50:29,104] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:50:29,104] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:50:47,606] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:50:47,614] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:50:49,437] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:50:49,437] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:50:50,157] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:50:50,157] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:52:31,670] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:52:31,676] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:52:33,057] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 15:52:33,065] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 15:52:33,667] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 15:52:33,667] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 15:52:38,362] INFO [libCDAS.output_db.output_DB:55] FMSLoginHist table is successfully updated.
+[2022-12-01 16:01:09,548] ERROR [libEmailLog.email_log.message:91] Error in Getting the Subject/Text/Image/Attachment. Error Message: <class 'FileNotFoundError'>[Errno 2] No such file or directory: 'tests/test_pic.png'
+[2022-12-01 16:01:12,662] INFO [libEmailLog.email_log.run:185] Checking log files now.
+[2022-12-01 16:05:51,217] INFO [libEmailLog.email_log.run:185] Checking log files now.
+[2022-12-01 16:08:31,392] INFO [libEmailLog.email_log.run:185] Checking log files now.
+[2022-12-01 16:08:36,705] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 16:08:36,705] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 16:08:38,223] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 16:08:38,223] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 16:08:38,917] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 16:08:38,917] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 16:08:43,406] INFO [libCDAS.output_db.output_DB:55] FMSLoginHist table is successfully updated.
+[2022-12-01 16:49:20,797] INFO [libEmailLog.email_log.run:185] Checking log files now.
+[2022-12-01 16:49:25,342] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 16:49:25,344] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 16:49:26,884] INFO [imbox.imbox.__init__:42] Connected to IMAP Server with user liwenjing@myascents.com on imap.gmail.com over SSL
+[2022-12-01 16:49:26,884] INFO [imbox.imbox.messages:98] Fetch list of messages from inbox
+[2022-12-01 16:49:27,480] INFO [imbox.parser.parse_email:254] Downloaded and parsed mail 'User Login Report (CDAS)' with 1 attachments
+[2022-12-01 16:49:27,480] INFO [imbox.imbox.mark_seen:58] Mark UID 19617 with \Seen FLAG
+[2022-12-01 16:49:32,076] INFO [libCDAS.output_db.output_db:53] FMSLoginHist table is successfully updated.
