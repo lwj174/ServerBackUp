@@ -1,0 +1,6 @@
+{"host":"192.168.9.132",
+"user":"datauser",
+"password":"datauser",
+"database":"fms",
+"port":3306,
+"tk":"c09b7b7d85d534e92e8172052582ea89FD270E7A3445EA14B04B55D1FDA091D78FC3B5F6"}

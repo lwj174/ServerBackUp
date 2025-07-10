@@ -1,0 +1,1320 @@
+[2024-01-11 18:01:23,968] INFO [numexpr.utils._init_num_threads:129] Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2024-01-11 18:01:23,968] INFO [numexpr.utils._init_num_threads:141] NumExpr defaulting to 8 threads.
+[2024-01-11 18:06:17,000] INFO [numexpr.utils._init_num_threads:129] Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2024-01-11 18:06:17,001] INFO [numexpr.utils._init_num_threads:141] NumExpr defaulting to 8 threads.
+[2024-01-15 09:38:10,669] INFO [numexpr.utils._init_num_threads:129] Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2024-01-15 09:38:10,669] INFO [numexpr.utils._init_num_threads:141] NumExpr defaulting to 8 threads.
+[2024-01-16 12:04:40,485] INFO [numexpr.utils._init_num_threads:129] Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2024-01-16 12:04:40,485] INFO [numexpr.utils._init_num_threads:141] NumExpr defaulting to 8 threads.
+[2024-01-17 10:27:10,832] INFO [numexpr.utils._init_num_threads:129] Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2024-01-17 10:27:10,832] INFO [numexpr.utils._init_num_threads:141] NumExpr defaulting to 8 threads.
+[2024-01-18 10:17:35,338] INFO [numexpr.utils._init_num_threads:129] Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2024-01-18 10:17:35,338] INFO [numexpr.utils._init_num_threads:141] NumExpr defaulting to 8 threads.
+[2024-01-18 16:43:01,016] ERROR [libEmissionCalc.main.main:56] Traceback (most recent call last):
+  File "C:\Users\Zhen Yang\Desktop\current\co2x\Idling Emission Factor\libEmissionCalc\main.py", line 34, in main
+    df_trip,df_eh=input(cred,dt_latest)
+TypeError: 'DatabaseExtraction' object is not callable
+
+[2024-02-24 03:13:11,320] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "pandas\_libs\lib.pyx", line 2315, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "50.3 KWh"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\main.py", line 39, in main
+    a2, df_trip = data_process.fuel_emission_calc(df_trip,fuel_factor)
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\process.py", line 25, in fuel_emission_calc
+    a1["batteryCapacity"]=pd.to_numeric(a1["batteryCapacity"])
+  File "C:\Ascents\App\lib\site-packages\pandas\core\tools\numeric.py", line 184, in to_numeric
+    values, _ = lib.maybe_convert_numeric(
+  File "pandas\_libs\lib.pyx", line 2357, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "50.3 KWh" at position 203
+
+[2024-02-25 03:13:11,231] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "pandas\_libs\lib.pyx", line 2315, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "50.3 KWh"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\main.py", line 39, in main
+    a2, df_trip = data_process.fuel_emission_calc(df_trip,fuel_factor)
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\process.py", line 25, in fuel_emission_calc
+    a1["batteryCapacity"]=pd.to_numeric(a1["batteryCapacity"])
+  File "C:\Ascents\App\lib\site-packages\pandas\core\tools\numeric.py", line 184, in to_numeric
+    values, _ = lib.maybe_convert_numeric(
+  File "pandas\_libs\lib.pyx", line 2357, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "50.3 KWh" at position 147
+
+[2024-02-26 03:29:57,517] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "pandas\_libs\lib.pyx", line 2315, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "0.780 T"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\main.py", line 41, in main
+    b2, df_trip = data_process.dist_emission_calc(df_trip,dist_factor)
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\process.py", line 43, in dist_emission_calc
+    df_trip["carryingCapacity"]=pd.to_numeric(df_trip["carryingCapacity"])
+  File "C:\Ascents\App\lib\site-packages\pandas\core\tools\numeric.py", line 184, in to_numeric
+    values, _ = lib.maybe_convert_numeric(
+  File "pandas\_libs\lib.pyx", line 2357, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "0.780 T" at position 147
+
+[2024-03-22 03:13:11,112] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\main.py", line 39, in main
+    a2, df_trip = data_process.fuel_emission_calc(df_trip,fuel_factor)
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\process.py", line 14, in fuel_emission_calc
+    df_trip.loc[df_trip["batteryType"]!='',"Fuel"]="Electric"
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexing.py", line 716, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexing.py", line 1615, in _setitem_with_indexer
+    raise ValueError(
+ValueError: cannot set a frame with no defined index and a scalar
+
+[2024-03-26 06:28:04,228] ERROR [libEmissionCalc.extraction.extract_90day:68] Fail to read emission_calculation table from fms database. Error Message: <class 'pandas.io.sql.DatabaseError'>Execution failed on sql 'select * from emission_calculation ec2 where id>=                (select min(id) from emission_calculation ec where dt='2023-12-27') and remark!='90day's': You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 's' at line 1
+[2024-03-26 06:28:04,228] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\main.py", line 47, in main
+    f1=data_process.check_90day(cred,res2)
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\process.py", line 93, in check_90day
+    df_ref=input.extract_90day(cred)
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\extraction.py", line 72, in extract_90day
+    return df1
+UnboundLocalError: local variable 'df1' referenced before assignment
+
+[2024-03-26 06:35:52,476] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Fuel_Consumption_All'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\main.py", line 47, in main
+    f1=data_process.check_90day(cred,res2)
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\process.py", line 97, in check_90day
+    a1=a1.assign(AvgConsumed_90=a1["Fuel_Consumption_All"]/a1["tripMilageValue"])
+  File "C:\Ascents\App\lib\site-packages\pandas\core\frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Fuel_Consumption_All'
+
+[2024-04-20 03:13:10,859] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\main.py", line 41, in main
+    b2, df_trip = data_process.dist_emission_calc(df_trip,dist_factor)
+  File "C:\Ascents\Idling Emission Factor\libEmissionCalc\process.py", line 38, in dist_emission_calc
+    df_trip.loc[df_trip["batteryType"]!='',"Vehicle"]="Electric"
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexing.py", line 716, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexing.py", line 1615, in _setitem_with_indexer
+    raise ValueError(
+ValueError: cannot set a frame with no defined index and a scalar
+
+[2024-06-19 02:03:11,898] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Fuel_Consumption_All'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\main.py", line 47, in main
+    f1=data_process.check_90day(cred,res2)
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\process.py", line 97, in check_90day
+    a1=a1.assign(AvgConsumed_90=a1["Fuel_Consumption_All"]/a1["tripMilageValue"])
+  File "C:\Ascents\App\lib\site-packages\pandas\core\frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Fuel_Consumption_All'
+
+[2024-06-25 02:51:05,932] INFO [email_log.run:226] Checking log files now.
+[2024-06-25 02:51:05,941] INFO [email_log.run:230] No error found today.
+[2024-07-09 01:43:14,109] INFO [email_log.run:226] Checking log files now.
+[2024-07-09 01:43:14,125] INFO [email_log.run:230] No error found today.
+[2024-07-09 01:43:22,964] INFO [email_log.run:226] Checking log files now.
+[2024-07-09 01:43:22,964] INFO [email_log.run:230] No error found today.
+[2024-07-09 03:51:43,384] INFO [email_log.run:226] Checking log files now.
+[2024-07-09 03:51:43,399] INFO [email_log.run:230] No error found today.
+[2024-07-10 01:03:11,593] INFO [libEmissionCalc.output.output_db:24] Number of records: 466
+[2024-07-10 03:51:43,377] INFO [email_log.run:226] Checking log files now.
+[2024-07-10 03:51:43,392] INFO [email_log.run:230] No error found today.
+[2024-07-11 01:03:11,670] INFO [libEmissionCalc.output.output_db:24] Number of records: 473
+[2024-07-11 03:51:43,411] INFO [email_log.run:226] Checking log files now.
+[2024-07-11 03:51:43,411] INFO [email_log.run:230] No error found today.
+[2024-07-12 01:03:12,198] INFO [libEmissionCalc.output.output_db:24] Number of records: 467
+[2024-07-12 03:51:43,520] INFO [email_log.run:226] Checking log files now.
+[2024-07-12 03:51:43,536] INFO [email_log.run:230] No error found today.
+[2024-07-13 01:03:12,201] INFO [libEmissionCalc.output.output_db:24] Number of records: 465
+[2024-07-13 03:51:43,458] INFO [email_log.run:226] Checking log files now.
+[2024-07-13 03:51:43,458] INFO [email_log.run:230] No error found today.
+[2024-07-14 01:03:11,510] INFO [libEmissionCalc.output.output_db:24] Number of records: 401
+[2024-07-14 03:51:43,462] INFO [email_log.run:226] Checking log files now.
+[2024-07-14 03:51:43,462] INFO [email_log.run:230] No error found today.
+[2024-07-15 01:03:11,518] INFO [libEmissionCalc.output.output_db:24] Number of records: 268
+[2024-07-15 03:51:43,411] INFO [email_log.run:226] Checking log files now.
+[2024-07-15 03:51:43,426] INFO [email_log.run:230] No error found today.
+[2024-07-16 01:03:12,117] INFO [libEmissionCalc.output.output_db:24] Number of records: 474
+[2024-07-16 03:51:43,522] INFO [email_log.run:226] Checking log files now.
+[2024-07-16 03:51:43,531] INFO [email_log.run:230] No error found today.
+[2024-07-17 01:03:12,281] INFO [libEmissionCalc.output.output_db:24] Number of records: 485
+[2024-07-17 03:51:43,417] INFO [email_log.run:226] Checking log files now.
+[2024-07-17 03:51:43,432] INFO [email_log.run:230] No error found today.
+[2024-07-18 01:03:11,974] INFO [libEmissionCalc.output.output_db:24] Number of records: 476
+[2024-07-18 03:51:43,395] INFO [email_log.run:226] Checking log files now.
+[2024-07-18 03:51:43,411] INFO [email_log.run:230] No error found today.
+[2024-07-19 01:03:12,164] INFO [libEmissionCalc.output.output_db:24] Number of records: 467
+[2024-07-19 03:51:43,424] INFO [email_log.run:226] Checking log files now.
+[2024-07-19 03:51:43,424] INFO [email_log.run:230] No error found today.
+[2024-07-20 01:03:11,959] INFO [libEmissionCalc.output.output_db:24] Number of records: 463
+[2024-07-20 03:51:43,395] INFO [email_log.run:226] Checking log files now.
+[2024-07-20 03:51:43,411] INFO [email_log.run:230] No error found today.
+[2024-07-21 01:03:11,892] INFO [libEmissionCalc.output.output_db:24] Number of records: 377
+[2024-07-21 03:51:43,368] INFO [email_log.run:226] Checking log files now.
+[2024-07-21 03:51:43,384] INFO [email_log.run:230] No error found today.
+[2024-07-22 01:03:11,494] INFO [libEmissionCalc.output.output_db:24] Number of records: 267
+[2024-07-22 03:51:43,402] INFO [email_log.run:226] Checking log files now.
+[2024-07-22 03:51:43,417] INFO [email_log.run:230] No error found today.
+[2024-07-23 01:03:11,859] INFO [libEmissionCalc.output.output_db:24] Number of records: 461
+[2024-07-23 03:51:43,482] INFO [email_log.run:226] Checking log files now.
+[2024-07-23 03:51:43,497] INFO [email_log.run:230] No error found today.
+[2024-07-24 01:03:11,884] INFO [libEmissionCalc.output.output_db:24] Number of records: 471
+[2024-07-24 03:51:43,446] INFO [email_log.run:226] Checking log files now.
+[2024-07-24 03:51:43,462] INFO [email_log.run:230] No error found today.
+[2024-07-25 01:03:12,025] INFO [libEmissionCalc.output.output_db:24] Number of records: 466
+[2024-07-25 03:51:43,392] INFO [email_log.run:226] Checking log files now.
+[2024-07-25 03:51:43,407] INFO [email_log.run:230] No error found today.
+[2024-07-26 01:03:11,953] INFO [libEmissionCalc.output.output_db:24] Number of records: 472
+[2024-07-26 03:51:43,392] INFO [email_log.run:226] Checking log files now.
+[2024-07-26 03:51:43,407] INFO [email_log.run:230] No error found today.
+[2024-07-27 01:03:11,435] INFO [libEmissionCalc.output.output_db:24] Number of records: 469
+[2024-07-27 03:51:43,398] INFO [email_log.run:226] Checking log files now.
+[2024-07-27 03:51:43,414] INFO [email_log.run:230] No error found today.
+[2024-07-28 01:03:11,418] INFO [libEmissionCalc.output.output_db:24] Number of records: 401
+[2024-07-28 03:51:43,406] INFO [email_log.run:226] Checking log files now.
+[2024-07-28 03:51:43,422] INFO [email_log.run:230] No error found today.
+[2024-07-29 01:03:11,564] INFO [libEmissionCalc.output.output_db:24] Number of records: 268
+[2024-07-29 03:51:43,397] INFO [email_log.run:226] Checking log files now.
+[2024-07-29 03:51:43,413] INFO [email_log.run:230] No error found today.
+[2024-07-30 01:03:12,015] INFO [libEmissionCalc.output.output_db:24] Number of records: 479
+[2024-07-30 03:51:43,449] INFO [email_log.run:226] Checking log files now.
+[2024-07-30 03:51:43,464] INFO [email_log.run:230] No error found today.
+[2024-07-31 01:03:11,995] INFO [libEmissionCalc.output.output_db:24] Number of records: 485
+[2024-07-31 03:51:43,385] INFO [email_log.run:226] Checking log files now.
+[2024-07-31 03:51:43,400] INFO [email_log.run:230] No error found today.
+[2024-08-01 01:03:11,882] INFO [libEmissionCalc.output.output_db:24] Number of records: 486
+[2024-08-01 03:51:43,407] INFO [email_log.run:226] Checking log files now.
+[2024-08-01 03:51:43,422] INFO [email_log.run:230] No error found today.
+[2024-08-02 01:03:12,269] INFO [libEmissionCalc.output.output_db:24] Number of records: 481
+[2024-08-02 03:51:43,404] INFO [email_log.run:226] Checking log files now.
+[2024-08-02 03:51:43,404] INFO [email_log.run:230] No error found today.
+[2024-08-03 01:03:11,891] INFO [libEmissionCalc.output.output_db:24] Number of records: 482
+[2024-08-03 03:51:43,379] INFO [email_log.run:226] Checking log files now.
+[2024-08-03 03:51:43,395] INFO [email_log.run:230] No error found today.
+[2024-08-04 01:03:11,405] INFO [libEmissionCalc.output.output_db:24] Number of records: 400
+[2024-08-04 03:51:43,400] INFO [email_log.run:226] Checking log files now.
+[2024-08-04 03:51:43,415] INFO [email_log.run:230] No error found today.
+[2024-08-05 01:03:11,690] INFO [libEmissionCalc.output.output_db:24] Number of records: 273
+[2024-08-05 03:51:43,395] INFO [email_log.run:226] Checking log files now.
+[2024-08-05 03:51:43,395] INFO [email_log.run:230] No error found today.
+[2024-08-06 01:03:12,036] INFO [libEmissionCalc.output.output_db:24] Number of records: 472
+[2024-08-06 03:51:43,429] INFO [email_log.run:226] Checking log files now.
+[2024-08-06 03:51:43,444] INFO [email_log.run:230] No error found today.
+[2024-08-07 01:03:12,986] INFO [libEmissionCalc.output.output_db:24] Number of records: 484
+[2024-08-07 03:51:43,413] INFO [email_log.run:226] Checking log files now.
+[2024-08-07 03:51:43,413] INFO [email_log.run:230] No error found today.
+[2024-08-08 01:03:12,041] INFO [libEmissionCalc.output.output_db:24] Number of records: 493
+[2024-08-08 03:51:43,674] INFO [email_log.run:226] Checking log files now.
+[2024-08-08 03:51:43,689] INFO [email_log.run:230] No error found today.
+[2024-08-09 01:03:12,424] INFO [libEmissionCalc.output.output_db:24] Number of records: 481
+[2024-08-09 03:51:43,408] INFO [email_log.run:226] Checking log files now.
+[2024-08-09 03:51:43,424] INFO [email_log.run:230] No error found today.
+[2024-08-10 01:03:11,451] INFO [libEmissionCalc.output.output_db:24] Number of records: 272
+[2024-08-10 03:51:43,410] INFO [email_log.run:226] Checking log files now.
+[2024-08-10 03:51:43,410] INFO [email_log.run:230] No error found today.
+[2024-08-11 01:03:11,643] INFO [libEmissionCalc.output.output_db:24] Number of records: 372
+[2024-08-11 03:51:43,415] INFO [email_log.run:226] Checking log files now.
+[2024-08-11 03:51:43,431] INFO [email_log.run:230] No error found today.
+[2024-08-12 01:03:11,711] INFO [libEmissionCalc.output.output_db:24] Number of records: 276
+[2024-08-12 03:51:43,395] INFO [email_log.run:226] Checking log files now.
+[2024-08-12 03:51:43,411] INFO [email_log.run:230] No error found today.
+[2024-08-13 01:03:12,506] INFO [libEmissionCalc.output.output_db:24] Number of records: 485
+[2024-08-13 03:51:43,411] INFO [email_log.run:226] Checking log files now.
+[2024-08-13 03:51:43,427] INFO [email_log.run:230] No error found today.
+[2024-08-14 01:03:12,714] INFO [libEmissionCalc.output.output_db:24] Number of records: 489
+[2024-08-14 03:51:43,309] INFO [email_log.run:226] Checking log files now.
+[2024-08-14 03:51:43,309] INFO [email_log.run:230] No error found today.
+[2024-08-15 01:03:11,799] INFO [libEmissionCalc.output.output_db:24] Number of records: 486
+[2024-08-15 03:51:43,443] INFO [email_log.run:226] Checking log files now.
+[2024-08-15 03:51:43,443] INFO [email_log.run:230] No error found today.
+[2024-08-16 01:03:12,419] INFO [libEmissionCalc.output.output_db:24] Number of records: 496
+[2024-08-16 03:51:43,441] INFO [email_log.run:226] Checking log files now.
+[2024-08-16 03:51:43,441] INFO [email_log.run:230] No error found today.
+[2024-08-17 01:03:11,797] INFO [libEmissionCalc.output.output_db:24] Number of records: 477
+[2024-08-17 03:51:43,425] INFO [email_log.run:226] Checking log files now.
+[2024-08-17 03:51:43,425] INFO [email_log.run:230] No error found today.
+[2024-08-18 01:03:11,700] INFO [libEmissionCalc.output.output_db:24] Number of records: 399
+[2024-08-18 03:51:43,424] INFO [email_log.run:226] Checking log files now.
+[2024-08-18 03:51:43,424] INFO [email_log.run:230] No error found today.
+[2024-08-19 01:03:11,822] INFO [libEmissionCalc.output.output_db:24] Number of records: 264
+[2024-08-19 03:51:43,440] INFO [email_log.run:226] Checking log files now.
+[2024-08-19 03:51:43,440] INFO [email_log.run:230] No error found today.
+[2024-08-20 01:03:12,017] INFO [libEmissionCalc.output.output_db:24] Number of records: 494
+[2024-08-20 03:51:43,414] INFO [email_log.run:226] Checking log files now.
+[2024-08-20 03:51:43,430] INFO [email_log.run:230] No error found today.
+[2024-08-21 01:03:11,874] INFO [libEmissionCalc.output.output_db:24] Number of records: 495
+[2024-08-21 03:51:43,480] INFO [email_log.run:226] Checking log files now.
+[2024-08-21 03:51:43,480] INFO [email_log.run:230] No error found today.
+[2024-08-22 01:03:12,192] INFO [libEmissionCalc.output.output_db:24] Number of records: 482
+[2024-08-22 03:51:43,414] INFO [email_log.run:226] Checking log files now.
+[2024-08-22 03:51:43,414] INFO [email_log.run:230] No error found today.
+[2024-08-23 01:03:12,502] INFO [libEmissionCalc.output.output_db:24] Number of records: 490
+[2024-08-23 03:51:43,714] INFO [email_log.run:226] Checking log files now.
+[2024-08-23 03:51:43,714] INFO [email_log.run:230] No error found today.
+[2024-08-24 01:03:12,523] INFO [libEmissionCalc.output.output_db:24] Number of records: 496
+[2024-08-24 03:51:43,463] INFO [email_log.run:226] Checking log files now.
+[2024-08-24 03:51:43,479] INFO [email_log.run:230] No error found today.
+[2024-08-25 01:03:11,654] INFO [libEmissionCalc.output.output_db:24] Number of records: 408
+[2024-08-25 03:51:43,394] INFO [email_log.run:226] Checking log files now.
+[2024-08-25 03:51:43,394] INFO [email_log.run:230] No error found today.
+[2024-08-26 01:03:11,400] INFO [libEmissionCalc.output.output_db:24] Number of records: 266
+[2024-08-26 03:51:43,400] INFO [email_log.run:226] Checking log files now.
+[2024-08-26 03:51:43,415] INFO [email_log.run:230] No error found today.
+[2024-08-26 07:30:05,366] INFO [libEmissionCalc.output.output_db:24] Number of records: 266
+[2024-08-27 01:03:11,962] INFO [libEmissionCalc.output.output_db:24] Number of records: 485
+[2024-08-27 03:51:43,496] INFO [email_log.run:226] Checking log files now.
+[2024-08-27 03:51:43,496] INFO [email_log.run:230] No error found today.
+[2024-08-28 01:03:11,784] INFO [libEmissionCalc.output.output_db:24] Number of records: 495
+[2024-08-28 03:51:57,445] INFO [email_log.run:226] Checking log files now.
+[2024-08-28 03:51:57,453] INFO [email_log.run:230] No error found today.
+[2024-08-29 01:03:11,847] INFO [libEmissionCalc.output.output_db:24] Number of records: 497
+[2024-08-29 03:51:43,400] INFO [email_log.run:226] Checking log files now.
+[2024-08-29 03:51:43,415] INFO [email_log.run:230] No error found today.
+[2024-08-30 01:03:11,808] INFO [libEmissionCalc.output.output_db:24] Number of records: 488
+[2024-08-30 03:51:43,463] INFO [email_log.run:226] Checking log files now.
+[2024-08-30 03:51:43,463] INFO [email_log.run:230] No error found today.
+[2024-08-31 01:03:12,240] INFO [libEmissionCalc.output.output_db:24] Number of records: 488
+[2024-08-31 03:51:43,377] INFO [email_log.run:226] Checking log files now.
+[2024-08-31 03:51:43,392] INFO [email_log.run:230] No error found today.
+[2024-09-01 01:03:29,601] INFO [libEmissionCalc.output.output_db:24] Number of records: 420
+[2024-09-01 03:51:43,402] INFO [email_log.run:226] Checking log files now.
+[2024-09-01 03:51:43,402] INFO [email_log.run:230] No error found today.
+[2024-09-02 01:03:33,923] INFO [libEmissionCalc.output.output_db:24] Number of records: 273
+[2024-09-02 02:34:55,055] INFO [libEmissionCalc.output.output_db:24] Number of records: 273
+[2024-09-02 03:51:43,749] INFO [email_log.run:226] Checking log files now.
+[2024-09-02 03:51:43,764] INFO [email_log.run:230] No error found today.
+[2024-09-02 05:19:42,145] INFO [libEmissionCalc.output.output_db:24] Number of records: 443
+[2024-09-03 01:03:23,133] INFO [libEmissionCalc.output.output_db:24] Number of records: 483
+[2024-09-03 03:51:43,426] INFO [email_log.run:226] Checking log files now.
+[2024-09-03 03:51:43,441] INFO [email_log.run:230] No error found today.
+[2024-09-04 01:03:28,456] INFO [libEmissionCalc.output.output_db:24] Number of records: 489
+[2024-09-04 03:51:43,428] INFO [email_log.run:226] Checking log files now.
+[2024-09-04 03:51:43,428] INFO [email_log.run:230] No error found today.
+[2024-09-05 01:03:12,294] INFO [libEmissionCalc.output.output_db:24] Number of records: 498
+[2024-09-05 03:51:43,471] INFO [email_log.run:226] Checking log files now.
+[2024-09-05 03:51:43,471] INFO [email_log.run:230] No error found today.
+[2024-09-06 01:03:13,495] INFO [libEmissionCalc.output.output_db:24] Number of records: 502
+[2024-09-06 03:51:43,332] INFO [email_log.run:226] Checking log files now.
+[2024-09-06 03:51:43,332] INFO [email_log.run:230] No error found today.
+[2024-09-06 08:04:32,869] INFO [libEmissionCalc.output.output_db:24] Number of records: 502
+[2024-09-06 08:43:55,347] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexes\base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'olometerFinal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\main.py", line 41, in main
+    b2, df_trip = data_process.dist_emission_calc(df_trip,dist_factor)
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\process.py", line 55, in dist_emission_calc
+    b1=b1.assign(mileageRd=b1["olometerFinal"]-b1["olometerInit"])
+  File "C:\Ascents\App\lib\site-packages\pandas\core\frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexes\base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'olometerFinal'
+
+[2024-09-06 08:44:55,869] INFO [libEmissionCalc.output.output_db:24] Number of records: 502
+[2024-09-06 08:46:58,340] INFO [libEmissionCalc.output.output_db:24] Number of records: 502
+[2024-09-06 09:48:42,485] INFO [libEmissionCalc.output.output_db:24] Number of records: 502
+[2024-09-07 01:03:11,705] INFO [libEmissionCalc.output.output_db:24] Number of records: 496
+[2024-09-07 03:51:43,437] INFO [email_log.run:226] Checking log files now.
+[2024-09-07 03:51:43,437] INFO [email_log.run:230] No error found today.
+[2024-09-08 01:03:11,543] INFO [libEmissionCalc.output.output_db:24] Number of records: 416
+[2024-09-08 03:51:43,460] INFO [email_log.run:226] Checking log files now.
+[2024-09-08 03:51:43,476] INFO [email_log.run:230] No error found today.
+[2024-09-09 01:03:10,998] INFO [libEmissionCalc.output.output_db:24] Number of records: 274
+[2024-09-09 03:51:43,417] INFO [email_log.run:226] Checking log files now.
+[2024-09-09 03:51:43,433] INFO [email_log.run:230] No error found today.
+[2024-09-10 01:03:11,732] INFO [libEmissionCalc.output.output_db:24] Number of records: 487
+[2024-09-10 03:51:43,379] INFO [email_log.run:226] Checking log files now.
+[2024-09-10 03:51:43,395] INFO [email_log.run:230] No error found today.
+[2024-09-11 01:03:12,175] INFO [libEmissionCalc.output.output_db:24] Number of records: 498
+[2024-09-11 03:51:43,410] INFO [email_log.run:226] Checking log files now.
+[2024-09-11 03:51:43,410] INFO [email_log.run:230] No error found today.
+[2024-09-12 01:03:12,281] INFO [libEmissionCalc.output.output_db:24] Number of records: 502
+[2024-09-12 03:51:43,399] INFO [email_log.run:226] Checking log files now.
+[2024-09-12 03:51:43,399] INFO [email_log.run:230] No error found today.
+[2024-09-13 01:03:11,656] INFO [libEmissionCalc.output.output_db:24] Number of records: 499
+[2024-09-13 03:51:43,419] INFO [email_log.run:226] Checking log files now.
+[2024-09-13 03:51:43,434] INFO [email_log.run:230] No error found today.
+[2024-09-14 01:03:11,699] INFO [libEmissionCalc.output.output_db:24] Number of records: 497
+[2024-09-14 03:51:43,432] INFO [email_log.run:226] Checking log files now.
+[2024-09-14 03:51:43,432] INFO [email_log.run:230] No error found today.
+[2024-09-15 01:03:11,510] INFO [libEmissionCalc.output.output_db:24] Number of records: 403
+[2024-09-15 03:51:43,449] INFO [email_log.run:226] Checking log files now.
+[2024-09-15 03:51:43,457] INFO [email_log.run:230] No error found today.
+[2024-09-16 01:03:11,465] INFO [libEmissionCalc.output.output_db:24] Number of records: 281
+[2024-09-16 03:51:43,398] INFO [email_log.run:226] Checking log files now.
+[2024-09-16 03:51:43,414] INFO [email_log.run:230] No error found today.
+[2024-09-17 01:03:11,817] INFO [libEmissionCalc.output.output_db:24] Number of records: 493
+[2024-09-17 03:51:43,393] INFO [email_log.run:226] Checking log files now.
+[2024-09-17 03:51:43,409] INFO [email_log.run:230] No error found today.
+[2024-09-18 01:03:11,745] INFO [libEmissionCalc.output.output_db:24] Number of records: 508
+[2024-09-18 03:51:43,395] INFO [email_log.run:226] Checking log files now.
+[2024-09-18 03:51:43,395] INFO [email_log.run:230] No error found today.
+[2024-09-19 01:03:11,905] INFO [libEmissionCalc.output.output_db:24] Number of records: 496
+[2024-09-19 03:51:43,504] INFO [email_log.run:226] Checking log files now.
+[2024-09-19 03:51:43,660] INFO [email_log.run:230] No error found today.
+[2024-09-20 01:03:12,602] INFO [libEmissionCalc.output.output_db:24] Number of records: 498
+[2024-09-20 03:51:43,373] INFO [email_log.run:226] Checking log files now.
+[2024-09-20 03:51:43,388] INFO [email_log.run:230] No error found today.
+[2024-09-21 01:03:11,503] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "pandas\_libs\lib.pyx", line 2315, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "1,870"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\main.py", line 41, in main
+    b2, df_trip = data_process.dist_emission_calc(df_trip,dist_factor)
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\process.py", line 43, in dist_emission_calc
+    df_trip["grossVehicleWeight"]=pd.to_numeric(df_trip["grossVehicleWeight"].str.split(' ').str[0])
+  File "C:\Ascents\App\lib\site-packages\pandas\core\tools\numeric.py", line 184, in to_numeric
+    values, _ = lib.maybe_convert_numeric(
+  File "pandas\_libs\lib.pyx", line 2357, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "1,870" at position 1641
+
+[2024-09-21 03:51:43,598] INFO [email_log.run:226] Checking log files now.
+[2024-09-21 06:37:22,890] INFO [libEmissionCalc.output.output_db:24] Number of records: 488
+[2024-09-22 01:03:11,605] INFO [libEmissionCalc.output.output_db:24] Number of records: 434
+[2024-09-22 03:51:43,404] INFO [email_log.run:226] Checking log files now.
+[2024-09-22 03:51:43,420] INFO [email_log.run:230] No error found today.
+[2024-09-23 01:03:11,521] INFO [libEmissionCalc.output.output_db:24] Number of records: 291
+[2024-09-23 03:51:43,327] INFO [email_log.run:226] Checking log files now.
+[2024-09-23 03:51:43,342] INFO [email_log.run:230] No error found today.
+[2024-09-24 01:03:11,628] INFO [libEmissionCalc.output.output_db:24] Number of records: 497
+[2024-09-24 03:51:43,451] INFO [email_log.run:226] Checking log files now.
+[2024-09-24 03:51:43,466] INFO [email_log.run:230] No error found today.
+[2024-09-25 01:03:11,592] INFO [libEmissionCalc.output.output_db:24] Number of records: 513
+[2024-09-25 03:51:43,428] INFO [email_log.run:226] Checking log files now.
+[2024-09-25 03:51:43,428] INFO [email_log.run:230] No error found today.
+[2024-09-26 01:03:11,791] INFO [libEmissionCalc.output.output_db:24] Number of records: 514
+[2024-09-26 03:51:43,403] INFO [email_log.run:226] Checking log files now.
+[2024-09-26 03:51:43,419] INFO [email_log.run:230] No error found today.
+[2024-09-27 01:03:12,085] INFO [libEmissionCalc.output.output_db:24] Number of records: 505
+[2024-09-27 03:51:43,488] INFO [email_log.run:226] Checking log files now.
+[2024-09-27 03:51:43,488] INFO [email_log.run:230] No error found today.
+[2024-09-28 01:03:11,925] INFO [libEmissionCalc.output.output_db:24] Number of records: 513
+[2024-09-28 03:51:43,418] INFO [email_log.run:226] Checking log files now.
+[2024-09-28 03:51:43,418] INFO [email_log.run:230] No error found today.
+[2024-09-29 01:03:11,502] INFO [libEmissionCalc.output.output_db:24] Number of records: 428
+[2024-09-29 03:51:43,361] INFO [email_log.run:226] Checking log files now.
+[2024-09-29 03:51:43,376] INFO [email_log.run:230] No error found today.
+[2024-09-30 01:03:11,586] INFO [libEmissionCalc.output.output_db:24] Number of records: 302
+[2024-09-30 03:51:43,317] INFO [email_log.run:226] Checking log files now.
+[2024-09-30 03:51:43,333] INFO [email_log.run:230] No error found today.
+[2024-10-01 01:03:12,085] INFO [libEmissionCalc.output.output_db:24] Number of records: 508
+[2024-10-01 03:51:43,401] INFO [email_log.run:226] Checking log files now.
+[2024-10-01 03:51:43,416] INFO [email_log.run:230] No error found today.
+[2024-10-02 01:03:12,189] INFO [libEmissionCalc.output.output_db:24] Number of records: 511
+[2024-10-02 03:51:43,969] INFO [email_log.run:226] Checking log files now.
+[2024-10-02 03:51:43,969] INFO [email_log.run:230] No error found today.
+[2024-10-03 01:03:11,744] INFO [libEmissionCalc.output.output_db:24] Number of records: 507
+[2024-10-03 03:51:43,960] INFO [email_log.run:226] Checking log files now.
+[2024-10-03 03:51:43,976] INFO [email_log.run:230] No error found today.
+[2024-10-04 01:03:12,966] INFO [libEmissionCalc.output.output_db:24] Number of records: 510
+[2024-10-04 03:51:43,376] INFO [email_log.run:226] Checking log files now.
+[2024-10-04 03:51:43,376] INFO [email_log.run:230] No error found today.
+[2024-10-05 01:03:14,188] INFO [libEmissionCalc.output.output_db:24] Number of records: 500
+[2024-10-05 03:51:43,401] INFO [email_log.run:226] Checking log files now.
+[2024-10-05 03:51:43,526] INFO [email_log.run:230] No error found today.
+[2024-10-06 01:03:11,939] INFO [libEmissionCalc.output.output_db:24] Number of records: 423
+[2024-10-06 03:51:43,489] INFO [email_log.run:226] Checking log files now.
+[2024-10-06 03:51:43,504] INFO [email_log.run:230] No error found today.
+[2024-10-07 01:03:11,374] INFO [libEmissionCalc.output.output_db:24] Number of records: 290
+[2024-10-07 03:51:43,333] INFO [email_log.run:226] Checking log files now.
+[2024-10-07 03:51:43,333] INFO [email_log.run:230] No error found today.
+[2024-10-08 01:03:12,092] INFO [libEmissionCalc.output.output_db:24] Number of records: 497
+[2024-10-08 03:51:43,944] INFO [email_log.run:226] Checking log files now.
+[2024-10-08 03:51:43,944] INFO [email_log.run:230] No error found today.
+[2024-10-09 01:03:11,970] INFO [libEmissionCalc.output.output_db:24] Number of records: 493
+[2024-10-09 03:51:43,946] INFO [email_log.run:226] Checking log files now.
+[2024-10-09 03:51:45,241] INFO [email_log.run:230] No error found today.
+[2024-10-10 01:03:11,866] INFO [libEmissionCalc.output.output_db:24] Number of records: 512
+[2024-10-10 03:51:43,304] INFO [email_log.run:226] Checking log files now.
+[2024-10-10 03:51:44,022] INFO [email_log.run:230] No error found today.
+[2024-10-11 01:03:12,331] INFO [libEmissionCalc.output.output_db:24] Number of records: 505
+[2024-10-11 03:51:43,419] INFO [email_log.run:226] Checking log files now.
+[2024-10-11 03:51:43,575] INFO [email_log.run:230] No error found today.
+[2024-10-12 01:03:12,067] INFO [libEmissionCalc.output.output_db:24] Number of records: 507
+[2024-10-12 03:51:43,304] INFO [email_log.run:226] Checking log files now.
+[2024-10-12 03:51:43,367] INFO [email_log.run:230] No error found today.
+[2024-10-13 01:03:11,612] INFO [libEmissionCalc.output.output_db:24] Number of records: 425
+[2024-10-13 03:51:43,340] INFO [email_log.run:226] Checking log files now.
+[2024-10-13 03:51:43,355] INFO [email_log.run:230] No error found today.
+[2024-10-14 01:03:11,540] INFO [libEmissionCalc.output.output_db:24] Number of records: 284
+[2024-10-14 03:51:43,346] INFO [email_log.run:226] Checking log files now.
+[2024-10-14 03:51:43,361] INFO [email_log.run:230] No error found today.
+[2024-10-15 01:03:11,965] INFO [libEmissionCalc.output.output_db:24] Number of records: 513
+[2024-10-15 03:51:43,423] INFO [email_log.run:226] Checking log files now.
+[2024-10-15 03:51:43,439] INFO [email_log.run:230] No error found today.
+[2024-10-16 01:03:13,957] INFO [libEmissionCalc.output.output_db:24] Number of records: 533
+[2024-10-16 03:51:43,425] INFO [email_log.run:226] Checking log files now.
+[2024-10-16 03:51:43,503] INFO [email_log.run:230] No error found today.
+[2024-10-17 01:03:12,115] INFO [libEmissionCalc.output.output_db:24] Number of records: 527
+[2024-10-17 03:51:43,414] INFO [email_log.run:226] Checking log files now.
+[2024-10-17 03:51:43,446] INFO [email_log.run:230] No error found today.
+[2024-10-18 01:03:11,711] INFO [libEmissionCalc.output.output_db:24] Number of records: 535
+[2024-10-18 03:51:43,309] INFO [email_log.run:226] Checking log files now.
+[2024-10-18 03:51:43,340] INFO [email_log.run:230] No error found today.
+[2024-10-19 01:03:11,864] INFO [libEmissionCalc.output.output_db:24] Number of records: 537
+[2024-10-19 03:51:43,399] INFO [email_log.run:226] Checking log files now.
+[2024-10-19 03:51:43,414] INFO [email_log.run:230] No error found today.
+[2024-10-20 01:03:11,984] INFO [libEmissionCalc.output.output_db:24] Number of records: 461
+[2024-10-20 03:51:43,353] INFO [email_log.run:226] Checking log files now.
+[2024-10-20 03:51:43,353] INFO [email_log.run:230] No error found today.
+[2024-10-21 01:03:11,636] INFO [libEmissionCalc.output.output_db:24] Number of records: 313
+[2024-10-21 03:51:43,368] INFO [email_log.run:226] Checking log files now.
+[2024-10-21 03:51:43,383] INFO [email_log.run:230] No error found today.
+[2024-10-22 01:03:12,229] INFO [libEmissionCalc.output.output_db:24] Number of records: 546
+[2024-10-22 03:51:43,369] INFO [email_log.run:226] Checking log files now.
+[2024-10-22 03:51:43,385] INFO [email_log.run:230] No error found today.
+[2024-10-23 01:03:12,027] INFO [libEmissionCalc.output.output_db:24] Number of records: 540
+[2024-10-23 03:51:43,920] INFO [email_log.run:226] Checking log files now.
+[2024-10-23 03:51:43,935] INFO [email_log.run:230] No error found today.
+[2024-10-24 01:03:12,184] INFO [libEmissionCalc.output.output_db:24] Number of records: 554
+[2024-10-24 03:51:43,311] INFO [email_log.run:226] Checking log files now.
+[2024-10-24 03:51:43,311] INFO [email_log.run:230] No error found today.
+[2024-10-25 01:03:11,963] INFO [libEmissionCalc.output.output_db:24] Number of records: 547
+[2024-10-25 03:51:43,450] INFO [email_log.run:226] Checking log files now.
+[2024-10-25 03:51:43,450] INFO [email_log.run:230] No error found today.
+[2024-10-26 01:03:12,175] INFO [libEmissionCalc.output.output_db:24] Number of records: 540
+[2024-10-26 03:51:43,379] INFO [email_log.run:226] Checking log files now.
+[2024-10-26 03:51:43,379] INFO [email_log.run:230] No error found today.
+[2024-10-27 01:03:11,941] INFO [libEmissionCalc.output.output_db:24] Number of records: 486
+[2024-10-27 03:51:43,380] INFO [email_log.run:226] Checking log files now.
+[2024-10-27 03:51:43,395] INFO [email_log.run:230] No error found today.
+[2024-10-28 01:03:12,243] INFO [libEmissionCalc.output.output_db:24] Number of records: 340
+[2024-10-28 03:51:43,396] INFO [email_log.run:226] Checking log files now.
+[2024-10-28 03:51:43,412] INFO [email_log.run:230] No error found today.
+[2024-10-29 01:03:12,144] INFO [libEmissionCalc.output.output_db:24] Number of records: 550
+[2024-10-29 03:51:43,483] INFO [email_log.run:226] Checking log files now.
+[2024-10-29 03:51:43,483] INFO [email_log.run:230] No error found today.
+[2024-10-30 01:03:12,136] INFO [libEmissionCalc.output.output_db:24] Number of records: 568
+[2024-10-30 03:51:43,367] INFO [email_log.run:226] Checking log files now.
+[2024-10-30 03:51:43,382] INFO [email_log.run:230] No error found today.
+[2024-10-31 01:03:12,369] INFO [libEmissionCalc.output.output_db:24] Number of records: 552
+[2024-10-31 03:51:43,375] INFO [email_log.run:226] Checking log files now.
+[2024-10-31 03:51:43,375] INFO [email_log.run:230] No error found today.
+[2024-11-01 01:03:11,190] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "pandas\_libs\lib.pyx", line 2315, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "National"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\main.py", line 41, in main
+    b2, df_trip = data_process.dist_emission_calc(df_trip,dist_factor)
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\process.py", line 44, in dist_emission_calc
+    df_trip["carryingCapacity"]=pd.to_numeric(df_trip["carryingCapacity"].str.split(' ').str[0].str.replace(',',''))
+  File "C:\Ascents\App\lib\site-packages\pandas\core\tools\numeric.py", line 184, in to_numeric
+    values, _ = lib.maybe_convert_numeric(
+  File "pandas\_libs\lib.pyx", line 2357, in pandas._libs.lib.maybe_convert_numeric
+ValueError: Unable to parse string "National" at position 2915
+
+[2024-11-01 03:52:03,941] INFO [email_log.run:226] Checking log files now.
+[2024-11-01 06:17:22,360] INFO [libEmissionCalc.output.output_db:24] Number of records: 329
+[2024-11-02 01:03:12,085] INFO [libEmissionCalc.output.output_db:24] Number of records: 541
+[2024-11-02 03:51:43,362] INFO [email_log.run:226] Checking log files now.
+[2024-11-02 03:51:43,362] INFO [email_log.run:230] No error found today.
+[2024-11-03 01:03:11,852] INFO [libEmissionCalc.output.output_db:24] Number of records: 458
+[2024-11-03 03:51:43,410] INFO [email_log.run:226] Checking log files now.
+[2024-11-03 03:51:43,418] INFO [email_log.run:230] No error found today.
+[2024-11-04 01:03:11,779] INFO [libEmissionCalc.output.output_db:24] Number of records: 324
+[2024-11-04 03:51:43,296] INFO [email_log.run:226] Checking log files now.
+[2024-11-04 03:51:43,327] INFO [email_log.run:230] No error found today.
+[2024-11-05 01:03:12,123] INFO [libEmissionCalc.output.output_db:24] Number of records: 556
+[2024-11-05 03:51:43,381] INFO [email_log.run:226] Checking log files now.
+[2024-11-05 03:51:43,381] INFO [email_log.run:230] No error found today.
+[2024-11-06 01:03:12,674] INFO [libEmissionCalc.output.output_db:24] Number of records: 565
+[2024-11-06 03:51:43,440] INFO [email_log.run:226] Checking log files now.
+[2024-11-06 03:51:43,440] INFO [email_log.run:230] No error found today.
+[2024-11-07 01:03:12,628] INFO [libEmissionCalc.output.output_db:24] Number of records: 571
+[2024-11-07 03:51:43,429] INFO [email_log.run:226] Checking log files now.
+[2024-11-07 03:51:43,429] INFO [email_log.run:230] No error found today.
+[2024-11-08 01:03:12,301] INFO [libEmissionCalc.output.output_db:24] Number of records: 588
+[2024-11-08 03:51:43,455] INFO [email_log.run:226] Checking log files now.
+[2024-11-08 03:51:43,455] INFO [email_log.run:230] No error found today.
+[2024-11-09 01:03:12,880] INFO [libEmissionCalc.output.output_db:24] Number of records: 586
+[2024-11-10 01:03:12,732] INFO [libEmissionCalc.output.output_db:24] Number of records: 481
+[2024-11-10 03:51:43,412] INFO [email_log.run:226] Checking log files now.
+[2024-11-10 03:51:43,422] INFO [email_log.run:230] No error found today.
+[2024-11-11 01:03:12,642] INFO [libEmissionCalc.output.output_db:24] Number of records: 336
+[2024-11-11 03:51:43,405] INFO [email_log.run:226] Checking log files now.
+[2024-11-11 03:51:43,452] INFO [email_log.run:230] No error found today.
+[2024-11-12 01:03:12,656] INFO [libEmissionCalc.output.output_db:24] Number of records: 560
+[2024-11-12 03:51:45,845] INFO [email_log.run:226] Checking log files now.
+[2024-11-12 03:51:46,001] INFO [email_log.run:230] No error found today.
+[2024-11-13 01:03:12,936] INFO [libEmissionCalc.output.output_db:24] Number of records: 573
+[2024-11-13 03:51:43,376] INFO [email_log.run:226] Checking log files now.
+[2024-11-13 03:51:43,376] INFO [email_log.run:230] No error found today.
+[2024-11-14 01:03:12,567] INFO [libEmissionCalc.output.output_db:24] Number of records: 563
+[2024-11-14 03:51:43,397] INFO [email_log.run:226] Checking log files now.
+[2024-11-14 03:51:43,413] INFO [email_log.run:230] No error found today.
+[2024-11-15 01:03:12,837] INFO [libEmissionCalc.output.output_db:24] Number of records: 563
+[2024-11-15 03:51:43,426] INFO [email_log.run:226] Checking log files now.
+[2024-11-15 03:51:43,426] INFO [email_log.run:230] No error found today.
+[2024-11-16 01:03:13,205] INFO [libEmissionCalc.output.output_db:24] Number of records: 573
+[2024-11-16 03:51:43,427] INFO [email_log.run:226] Checking log files now.
+[2024-11-16 03:51:43,443] INFO [email_log.run:230] No error found today.
+[2024-11-17 01:03:12,182] INFO [libEmissionCalc.output.output_db:24] Number of records: 495
+[2024-11-17 03:51:43,417] INFO [email_log.run:226] Checking log files now.
+[2024-11-17 03:51:43,480] INFO [email_log.run:230] No error found today.
+[2024-11-18 01:03:12,252] INFO [libEmissionCalc.output.output_db:24] Number of records: 354
+[2024-11-18 03:51:43,360] INFO [email_log.run:226] Checking log files now.
+[2024-11-18 03:51:43,406] INFO [email_log.run:230] No error found today.
+[2024-11-19 01:03:12,998] INFO [libEmissionCalc.output.output_db:24] Number of records: 564
+[2024-11-19 03:51:43,498] INFO [email_log.run:226] Checking log files now.
+[2024-11-19 03:51:43,514] INFO [email_log.run:230] No error found today.
+[2024-11-20 01:03:12,896] INFO [libEmissionCalc.output.output_db:24] Number of records: 587
+[2024-11-20 03:51:43,365] INFO [email_log.run:226] Checking log files now.
+[2024-11-20 03:51:43,365] INFO [email_log.run:230] No error found today.
+[2024-11-21 01:03:12,584] INFO [libEmissionCalc.output.output_db:24] Number of records: 570
+[2024-11-21 03:51:43,390] INFO [email_log.run:226] Checking log files now.
+[2024-11-21 03:51:43,530] INFO [email_log.run:230] No error found today.
+[2024-11-22 01:03:13,116] INFO [libEmissionCalc.output.output_db:24] Number of records: 588
+[2024-11-22 03:51:43,527] INFO [email_log.run:226] Checking log files now.
+[2024-11-22 03:51:43,574] INFO [email_log.run:230] No error found today.
+[2024-11-23 01:03:12,684] INFO [libEmissionCalc.output.output_db:24] Number of records: 590
+[2024-11-23 03:51:43,387] INFO [email_log.run:226] Checking log files now.
+[2024-11-23 03:51:43,418] INFO [email_log.run:230] No error found today.
+[2024-11-24 01:03:13,376] INFO [libEmissionCalc.output.output_db:24] Number of records: 494
+[2024-11-24 03:51:43,351] INFO [email_log.run:226] Checking log files now.
+[2024-11-24 03:51:43,476] INFO [email_log.run:230] No error found today.
+[2024-11-25 01:03:13,100] INFO [libEmissionCalc.output.output_db:24] Number of records: 357
+[2024-11-25 03:51:43,333] INFO [email_log.run:226] Checking log files now.
+[2024-11-25 03:51:43,364] INFO [email_log.run:230] No error found today.
+[2024-11-26 01:03:12,420] INFO [libEmissionCalc.output.output_db:24] Number of records: 579
+[2024-11-26 03:51:43,374] INFO [email_log.run:226] Checking log files now.
+[2024-11-26 03:51:43,405] INFO [email_log.run:230] No error found today.
+[2024-11-27 01:03:12,966] INFO [libEmissionCalc.output.output_db:24] Number of records: 594
+[2024-11-27 03:51:43,366] INFO [email_log.run:226] Checking log files now.
+[2024-11-27 03:51:43,429] INFO [email_log.run:230] No error found today.
+[2024-11-28 01:03:12,920] INFO [libEmissionCalc.output.output_db:24] Number of records: 584
+[2024-11-28 03:51:43,394] INFO [email_log.run:226] Checking log files now.
+[2024-11-28 03:51:43,425] INFO [email_log.run:230] No error found today.
+[2024-11-29 01:03:12,992] INFO [libEmissionCalc.output.output_db:24] Number of records: 565
+[2024-11-29 03:51:43,387] INFO [email_log.run:226] Checking log files now.
+[2024-11-29 03:51:43,387] INFO [email_log.run:230] No error found today.
+[2024-11-30 01:03:13,497] INFO [libEmissionCalc.output.output_db:24] Number of records: 582
+[2024-11-30 03:51:43,380] INFO [email_log.run:226] Checking log files now.
+[2024-11-30 03:51:43,443] INFO [email_log.run:230] No error found today.
+[2024-12-01 01:03:13,304] INFO [libEmissionCalc.output.output_db:24] Number of records: 517
+[2024-12-01 03:51:43,381] INFO [email_log.run:226] Checking log files now.
+[2024-12-01 03:51:43,459] INFO [email_log.run:230] No error found today.
+[2024-12-02 01:03:11,968] INFO [libEmissionCalc.output.output_db:24] Number of records: 365
+[2024-12-02 03:51:43,370] INFO [email_log.run:226] Checking log files now.
+[2024-12-02 03:51:43,373] INFO [email_log.run:230] No error found today.
+[2024-12-03 01:03:12,499] INFO [libEmissionCalc.output.output_db:24] Number of records: 604
+[2024-12-03 03:51:43,382] INFO [email_log.run:226] Checking log files now.
+[2024-12-03 03:51:43,475] INFO [email_log.run:230] No error found today.
+[2024-12-04 01:03:12,464] INFO [libEmissionCalc.output.output_db:24] Number of records: 596
+[2024-12-04 03:51:43,345] INFO [email_log.run:226] Checking log files now.
+[2024-12-04 03:51:43,345] INFO [email_log.run:230] No error found today.
+[2024-12-05 01:03:13,011] INFO [libEmissionCalc.output.output_db:24] Number of records: 610
+[2024-12-05 03:51:43,389] INFO [email_log.run:226] Checking log files now.
+[2024-12-05 03:51:43,435] INFO [email_log.run:230] No error found today.
+[2024-12-06 01:03:13,283] INFO [libEmissionCalc.output.output_db:24] Number of records: 604
+[2024-12-06 03:51:43,371] INFO [email_log.run:226] Checking log files now.
+[2024-12-06 03:51:43,386] INFO [email_log.run:230] No error found today.
+[2024-12-07 01:03:15,091] INFO [libEmissionCalc.output.output_db:24] Number of records: 593
+[2024-12-07 03:51:43,386] INFO [email_log.run:226] Checking log files now.
+[2024-12-07 03:51:43,418] INFO [email_log.run:230] No error found today.
+[2024-12-08 01:03:13,243] INFO [libEmissionCalc.output.output_db:24] Number of records: 547
+[2024-12-08 03:51:43,379] INFO [email_log.run:226] Checking log files now.
+[2024-12-08 03:51:43,426] INFO [email_log.run:230] No error found today.
+[2024-12-09 01:03:12,373] INFO [libEmissionCalc.output.output_db:24] Number of records: 418
+[2024-12-09 03:51:43,386] INFO [email_log.run:226] Checking log files now.
+[2024-12-09 03:51:43,418] INFO [email_log.run:230] No error found today.
+[2024-12-10 01:03:13,001] INFO [libEmissionCalc.output.output_db:24] Number of records: 593
+[2024-12-10 03:51:43,413] INFO [email_log.run:226] Checking log files now.
+[2024-12-10 03:51:43,445] INFO [email_log.run:230] No error found today.
+[2024-12-11 01:03:12,737] INFO [libEmissionCalc.output.output_db:24] Number of records: 591
+[2024-12-11 03:51:43,433] INFO [email_log.run:226] Checking log files now.
+[2024-12-11 03:51:43,433] INFO [email_log.run:230] No error found today.
+[2024-12-12 01:03:13,401] INFO [libEmissionCalc.output.output_db:24] Number of records: 591
+[2024-12-12 03:51:43,398] INFO [email_log.run:226] Checking log files now.
+[2024-12-12 03:51:43,398] INFO [email_log.run:230] No error found today.
+[2024-12-13 01:03:13,525] INFO [libEmissionCalc.output.output_db:24] Number of records: 608
+[2024-12-13 03:51:43,387] INFO [email_log.run:226] Checking log files now.
+[2024-12-13 03:51:43,387] INFO [email_log.run:230] No error found today.
+[2024-12-14 01:03:13,601] INFO [libEmissionCalc.output.output_db:24] Number of records: 607
+[2024-12-14 03:51:43,396] INFO [email_log.run:226] Checking log files now.
+[2024-12-14 03:51:43,412] INFO [email_log.run:230] No error found today.
+[2024-12-15 01:03:11,890] INFO [libEmissionCalc.output.output_db:24] Number of records: 536
+[2024-12-15 03:51:43,391] INFO [email_log.run:226] Checking log files now.
+[2024-12-15 03:51:43,406] INFO [email_log.run:230] No error found today.
+[2024-12-16 01:03:11,564] INFO [libEmissionCalc.output.output_db:24] Number of records: 383
+[2024-12-16 03:51:52,245] INFO [email_log.run:226] Checking log files now.
+[2024-12-16 03:51:53,321] INFO [email_log.run:230] No error found today.
+[2024-12-17 01:03:12,297] INFO [libEmissionCalc.output.output_db:24] Number of records: 603
+[2024-12-17 03:51:43,422] INFO [email_log.run:226] Checking log files now.
+[2024-12-17 03:51:43,516] INFO [email_log.run:230] No error found today.
+[2024-12-18 01:03:16,569] INFO [libEmissionCalc.output.output_db:24] Number of records: 615
+[2024-12-18 03:51:43,449] INFO [email_log.run:226] Checking log files now.
+[2024-12-18 03:51:43,512] INFO [email_log.run:230] No error found today.
+[2024-12-19 01:03:13,694] INFO [libEmissionCalc.output.output_db:24] Number of records: 622
+[2024-12-19 03:51:43,431] INFO [email_log.run:226] Checking log files now.
+[2024-12-19 03:51:43,587] INFO [email_log.run:230] No error found today.
+[2024-12-20 01:03:13,826] INFO [libEmissionCalc.output.output_db:24] Number of records: 612
+[2024-12-20 03:51:43,513] INFO [email_log.run:226] Checking log files now.
+[2024-12-20 03:51:43,716] INFO [email_log.run:230] No error found today.
+[2024-12-21 01:03:13,220] INFO [libEmissionCalc.output.output_db:24] Number of records: 612
+[2024-12-21 03:51:43,408] INFO [email_log.run:226] Checking log files now.
+[2024-12-21 03:51:43,470] INFO [email_log.run:230] No error found today.
+[2024-12-22 01:03:12,694] INFO [libEmissionCalc.output.output_db:24] Number of records: 546
+[2024-12-22 03:51:43,417] INFO [email_log.run:226] Checking log files now.
+[2024-12-22 03:51:43,557] INFO [email_log.run:230] No error found today.
+[2024-12-23 01:03:12,527] INFO [libEmissionCalc.output.output_db:24] Number of records: 394
+[2024-12-23 03:51:43,403] INFO [email_log.run:226] Checking log files now.
+[2024-12-23 03:51:43,496] INFO [email_log.run:230] No error found today.
+[2024-12-24 01:03:12,701] INFO [libEmissionCalc.output.output_db:24] Number of records: 615
+[2024-12-24 03:51:43,424] INFO [email_log.run:226] Checking log files now.
+[2024-12-24 03:51:43,470] INFO [email_log.run:230] No error found today.
+[2024-12-25 01:03:13,324] INFO [libEmissionCalc.output.output_db:24] Number of records: 612
+[2024-12-25 03:51:43,425] INFO [email_log.run:226] Checking log files now.
+[2024-12-25 03:51:43,440] INFO [email_log.run:230] No error found today.
+[2024-12-26 01:03:12,625] INFO [libEmissionCalc.output.output_db:24] Number of records: 394
+[2024-12-26 03:51:43,390] INFO [email_log.run:226] Checking log files now.
+[2024-12-26 03:51:43,405] INFO [email_log.run:230] No error found today.
+[2024-12-27 01:03:13,256] INFO [libEmissionCalc.output.output_db:24] Number of records: 612
+[2024-12-27 03:51:43,426] INFO [email_log.run:226] Checking log files now.
+[2024-12-27 03:51:43,472] INFO [email_log.run:230] No error found today.
+[2024-12-28 01:03:13,250] INFO [libEmissionCalc.output.output_db:24] Number of records: 615
+[2024-12-28 03:51:43,477] INFO [email_log.run:226] Checking log files now.
+[2024-12-28 03:51:43,586] INFO [email_log.run:230] No error found today.
+[2024-12-29 01:03:13,024] INFO [libEmissionCalc.output.output_db:24] Number of records: 560
+[2024-12-29 03:51:43,435] INFO [email_log.run:226] Checking log files now.
+[2024-12-29 03:51:43,466] INFO [email_log.run:230] No error found today.
+[2024-12-30 01:03:12,792] INFO [libEmissionCalc.output.output_db:24] Number of records: 407
+[2024-12-30 03:51:43,444] INFO [email_log.run:226] Checking log files now.
+[2024-12-30 03:51:43,475] INFO [email_log.run:230] No error found today.
+[2024-12-31 01:03:13,085] INFO [libEmissionCalc.output.output_db:24] Number of records: 616
+[2024-12-31 03:51:43,410] INFO [email_log.run:226] Checking log files now.
+[2024-12-31 03:51:43,473] INFO [email_log.run:230] No error found today.
+[2025-01-01 01:03:12,417] INFO [libEmissionCalc.output.output_db:24] Number of records: 609
+[2025-01-01 03:51:43,405] INFO [email_log.run:226] Checking log files now.
+[2025-01-01 03:51:43,592] INFO [email_log.run:230] No error found today.
+[2025-01-02 01:03:12,972] INFO [libEmissionCalc.output.output_db:24] Number of records: 400
+[2025-01-02 03:51:43,377] INFO [email_log.run:226] Checking log files now.
+[2025-01-02 03:51:43,455] INFO [email_log.run:230] No error found today.
+[2025-01-03 01:03:13,209] INFO [libEmissionCalc.output.output_db:24] Number of records: 631
+[2025-01-03 03:51:43,435] INFO [email_log.run:226] Checking log files now.
+[2025-01-03 03:51:43,513] INFO [email_log.run:230] No error found today.
+[2025-01-04 01:03:13,734] INFO [libEmissionCalc.output.output_db:24] Number of records: 649
+[2025-01-04 03:51:43,438] INFO [email_log.run:226] Checking log files now.
+[2025-01-04 03:51:43,547] INFO [email_log.run:230] No error found today.
+[2025-01-05 01:03:13,738] INFO [libEmissionCalc.output.output_db:24] Number of records: 550
+[2025-01-05 03:51:43,679] INFO [email_log.run:226] Checking log files now.
+[2025-01-05 03:51:43,679] INFO [email_log.run:230] No error found today.
+[2025-01-06 01:03:12,469] INFO [libEmissionCalc.output.output_db:24] Number of records: 386
+[2025-01-06 03:51:43,400] INFO [email_log.run:226] Checking log files now.
+[2025-01-06 03:51:43,416] INFO [email_log.run:230] No error found today.
+[2025-01-07 01:03:13,757] INFO [libEmissionCalc.output.output_db:24] Number of records: 655
+[2025-01-07 03:51:43,410] INFO [email_log.run:226] Checking log files now.
+[2025-01-07 03:51:43,471] INFO [email_log.run:230] No error found today.
+[2025-01-08 01:03:12,802] INFO [libEmissionCalc.output.output_db:24] Number of records: 643
+[2025-01-08 03:51:43,414] INFO [email_log.run:226] Checking log files now.
+[2025-01-08 03:51:43,508] INFO [email_log.run:230] No error found today.
+[2025-01-09 01:03:13,771] INFO [libEmissionCalc.output.output_db:24] Number of records: 647
+[2025-01-09 03:51:43,434] INFO [email_log.run:226] Checking log files now.
+[2025-01-09 03:51:43,590] INFO [email_log.run:230] No error found today.
+[2025-01-10 01:03:13,934] INFO [libEmissionCalc.output.output_db:24] Number of records: 656
+[2025-01-10 03:51:43,375] INFO [email_log.run:226] Checking log files now.
+[2025-01-10 03:51:43,406] INFO [email_log.run:230] No error found today.
+[2025-01-11 01:03:14,314] INFO [libEmissionCalc.output.output_db:24] Number of records: 668
+[2025-01-11 03:51:43,363] INFO [email_log.run:226] Checking log files now.
+[2025-01-11 03:51:43,441] INFO [email_log.run:230] No error found today.
+[2025-01-12 01:03:11,973] INFO [libEmissionCalc.output.output_db:24] Number of records: 590
+[2025-01-12 03:51:43,395] INFO [email_log.run:226] Checking log files now.
+[2025-01-12 03:51:43,395] INFO [email_log.run:230] No error found today.
+[2025-01-13 01:03:12,555] INFO [libEmissionCalc.output.output_db:24] Number of records: 431
+[2025-01-13 03:51:43,313] INFO [email_log.run:226] Checking log files now.
+[2025-01-13 03:51:43,329] INFO [email_log.run:230] No error found today.
+[2025-01-14 01:03:13,923] INFO [libEmissionCalc.output.output_db:24] Number of records: 668
+[2025-01-14 03:51:43,396] INFO [email_log.run:226] Checking log files now.
+[2025-01-14 03:51:43,503] INFO [email_log.run:230] No error found today.
+[2025-01-15 01:03:14,760] INFO [libEmissionCalc.output.output_db:24] Number of records: 681
+[2025-01-15 03:51:43,385] INFO [email_log.run:226] Checking log files now.
+[2025-01-15 03:51:43,432] INFO [email_log.run:230] No error found today.
+[2025-01-16 01:03:14,164] INFO [libEmissionCalc.output.output_db:24] Number of records: 690
+[2025-01-16 03:51:43,387] INFO [email_log.run:226] Checking log files now.
+[2025-01-16 03:51:43,511] INFO [email_log.run:230] No error found today.
+[2025-01-17 01:03:13,987] INFO [libEmissionCalc.output.output_db:24] Number of records: 694
+[2025-01-17 03:51:43,384] INFO [email_log.run:226] Checking log files now.
+[2025-01-17 03:51:43,415] INFO [email_log.run:230] No error found today.
+[2025-01-18 01:03:14,668] INFO [libEmissionCalc.output.output_db:24] Number of records: 697
+[2025-01-18 03:51:43,402] INFO [email_log.run:226] Checking log files now.
+[2025-01-18 03:51:43,449] INFO [email_log.run:230] No error found today.
+[2025-01-19 01:03:14,992] INFO [libEmissionCalc.output.output_db:24] Number of records: 615
+[2025-01-19 03:51:43,422] INFO [email_log.run:226] Checking log files now.
+[2025-01-19 03:51:43,474] INFO [email_log.run:230] No error found today.
+[2025-01-20 01:03:12,480] INFO [libEmissionCalc.output.output_db:24] Number of records: 475
+[2025-01-20 03:51:43,345] INFO [email_log.run:226] Checking log files now.
+[2025-01-20 03:51:43,360] INFO [email_log.run:230] No error found today.
+[2025-01-21 01:03:14,243] INFO [libEmissionCalc.output.output_db:24] Number of records: 721
+[2025-01-21 03:51:43,358] INFO [email_log.run:226] Checking log files now.
+[2025-01-21 03:51:43,405] INFO [email_log.run:230] No error found today.
+[2025-01-22 01:03:14,394] INFO [libEmissionCalc.output.output_db:24] Number of records: 731
+[2025-01-22 03:51:43,463] INFO [email_log.run:226] Checking log files now.
+[2025-01-22 03:51:43,588] INFO [email_log.run:230] No error found today.
+[2025-01-23 01:03:14,184] INFO [libEmissionCalc.output.output_db:24] Number of records: 752
+[2025-01-23 03:51:43,381] INFO [email_log.run:226] Checking log files now.
+[2025-01-23 03:51:43,428] INFO [email_log.run:230] No error found today.
+[2025-01-24 01:03:14,157] INFO [libEmissionCalc.output.output_db:24] Number of records: 744
+[2025-01-24 03:51:43,402] INFO [email_log.run:226] Checking log files now.
+[2025-01-24 03:51:43,480] INFO [email_log.run:230] No error found today.
+[2025-01-25 01:03:14,108] INFO [libEmissionCalc.output.output_db:24] Number of records: 743
+[2025-01-25 03:51:43,393] INFO [email_log.run:226] Checking log files now.
+[2025-01-25 03:51:43,534] INFO [email_log.run:230] No error found today.
+[2025-01-26 01:03:13,559] INFO [libEmissionCalc.output.output_db:24] Number of records: 665
+[2025-01-26 03:51:43,379] INFO [email_log.run:226] Checking log files now.
+[2025-01-26 03:51:43,410] INFO [email_log.run:230] No error found today.
+[2025-01-27 01:03:13,325] INFO [libEmissionCalc.output.output_db:24] Number of records: 529
+[2025-01-27 03:51:43,380] INFO [email_log.run:226] Checking log files now.
+[2025-01-27 03:51:43,426] INFO [email_log.run:230] No error found today.
+[2025-01-28 01:03:14,212] INFO [libEmissionCalc.output.output_db:24] Number of records: 718
+[2025-01-28 03:51:43,424] INFO [email_log.run:226] Checking log files now.
+[2025-01-28 03:51:43,601] INFO [email_log.run:230] No error found today.
+[2025-01-29 01:03:13,565] INFO [libEmissionCalc.output.output_db:24] Number of records: 655
+[2025-01-29 03:51:43,383] INFO [email_log.run:226] Checking log files now.
+[2025-01-29 03:51:43,430] INFO [email_log.run:230] No error found today.
+[2025-01-30 01:03:13,022] INFO [libEmissionCalc.output.output_db:24] Number of records: 478
+[2025-01-30 03:51:43,362] INFO [email_log.run:226] Checking log files now.
+[2025-01-30 03:51:43,362] INFO [email_log.run:230] No error found today.
+[2025-01-31 01:03:12,251] INFO [libEmissionCalc.output.output_db:24] Number of records: 482
+[2025-01-31 03:51:43,380] INFO [email_log.run:226] Checking log files now.
+[2025-01-31 03:51:43,380] INFO [email_log.run:230] No error found today.
+[2025-02-01 01:03:14,384] INFO [libEmissionCalc.output.output_db:24] Number of records: 655
+[2025-02-01 03:51:43,374] INFO [email_log.run:226] Checking log files now.
+[2025-02-01 03:51:43,405] INFO [email_log.run:230] No error found today.
+[2025-02-02 01:03:14,306] INFO [libEmissionCalc.output.output_db:24] Number of records: 588
+[2025-02-02 03:51:43,447] INFO [email_log.run:226] Checking log files now.
+[2025-02-02 03:51:43,556] INFO [email_log.run:230] No error found today.
+[2025-02-03 01:03:14,234] INFO [libEmissionCalc.output.output_db:24] Number of records: 495
+[2025-02-03 03:51:43,364] INFO [email_log.run:226] Checking log files now.
+[2025-02-03 03:51:43,442] INFO [email_log.run:230] No error found today.
+[2025-02-04 01:03:13,753] INFO [libEmissionCalc.output.output_db:24] Number of records: 708
+[2025-02-04 03:51:43,402] INFO [email_log.run:226] Checking log files now.
+[2025-02-04 03:51:43,449] INFO [email_log.run:230] No error found today.
+[2025-02-05 01:03:13,483] INFO [libEmissionCalc.output.output_db:24] Number of records: 710
+[2025-02-05 03:51:43,415] INFO [email_log.run:226] Checking log files now.
+[2025-02-05 03:51:43,553] INFO [email_log.run:230] No error found today.
+[2025-02-06 01:03:14,036] INFO [libEmissionCalc.output.output_db:24] Number of records: 728
+[2025-02-06 03:51:43,437] INFO [email_log.run:226] Checking log files now.
+[2025-02-06 03:51:43,484] INFO [email_log.run:230] No error found today.
+[2025-02-07 01:03:14,350] INFO [libEmissionCalc.output.output_db:24] Number of records: 711
+[2025-02-07 03:51:43,358] INFO [email_log.run:226] Checking log files now.
+[2025-02-07 03:51:43,436] INFO [email_log.run:230] No error found today.
+[2025-02-08 01:03:13,966] INFO [libEmissionCalc.output.output_db:24] Number of records: 726
+[2025-02-08 03:51:43,371] INFO [email_log.run:226] Checking log files now.
+[2025-02-08 03:51:43,465] INFO [email_log.run:230] No error found today.
+[2025-02-09 01:03:13,947] INFO [libEmissionCalc.output.output_db:24] Number of records: 637
+[2025-02-09 03:51:43,434] INFO [email_log.run:226] Checking log files now.
+[2025-02-09 03:51:43,512] INFO [email_log.run:230] No error found today.
+[2025-02-10 01:03:10,650] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\main.py", line 41, in main
+    b2, df_trip = data_process.dist_emission_calc(df_trip,dist_factor)
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\process.py", line 38, in dist_emission_calc
+    df_trip.loc[df_trip["batteryType"]!='',"Vehicle"]="Electric"
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexing.py", line 716, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexing.py", line 1615, in _setitem_with_indexer
+    raise ValueError(
+ValueError: cannot set a frame with no defined index and a scalar
+
+[2025-02-10 03:51:43,388] INFO [email_log.run:226] Checking log files now.
+[2025-02-10 04:02:28,766] ERROR [libEmissionCalc.main.main:57] Traceback (most recent call last):
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\main.py", line 41, in main
+    b2, df_trip = data_process.dist_emission_calc(df_trip,dist_factor)
+  File "C:\Ascents\CANBUS Average Algo\libEmissionCalc\process.py", line 38, in dist_emission_calc
+    df_trip.loc[df_trip["batteryType"]!='',"Vehicle"]="Electric"
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexing.py", line 716, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+  File "C:\Ascents\App\lib\site-packages\pandas\core\indexing.py", line 1615, in _setitem_with_indexer
+    raise ValueError(
+ValueError: cannot set a frame with no defined index and a scalar
+
+[2025-02-11 01:03:12,496] INFO [libEmissionCalc.output.output_db:24] Number of records: 723
+[2025-02-11 03:51:43,378] INFO [email_log.run:226] Checking log files now.
+[2025-02-11 03:51:43,394] INFO [email_log.run:230] No error found today.
+[2025-02-12 01:03:12,702] INFO [libEmissionCalc.output.output_db:24] Number of records: 750
+[2025-02-12 03:51:43,365] INFO [email_log.run:226] Checking log files now.
+[2025-02-12 03:51:43,365] INFO [email_log.run:230] No error found today.
+[2025-02-13 01:03:13,546] INFO [libEmissionCalc.output.output_db:24] Number of records: 750
+[2025-02-13 03:51:43,386] INFO [email_log.run:226] Checking log files now.
+[2025-02-13 03:51:43,394] INFO [email_log.run:230] No error found today.
+[2025-02-14 01:03:13,068] INFO [libEmissionCalc.output.output_db:24] Number of records: 770
+[2025-02-14 03:51:43,362] INFO [email_log.run:226] Checking log files now.
+[2025-02-14 03:51:43,362] INFO [email_log.run:230] No error found today.
+[2025-02-15 01:03:12,702] INFO [libEmissionCalc.output.output_db:24] Number of records: 775
+[2025-02-15 03:51:43,336] INFO [email_log.run:226] Checking log files now.
+[2025-02-15 03:51:43,352] INFO [email_log.run:230] No error found today.
+[2025-02-16 01:03:12,711] INFO [libEmissionCalc.output.output_db:24] Number of records: 672
+[2025-02-16 03:51:43,394] INFO [email_log.run:226] Checking log files now.
+[2025-02-16 03:51:43,410] INFO [email_log.run:230] No error found today.
+[2025-02-17 01:03:12,132] INFO [libEmissionCalc.output.output_db:24] Number of records: 522
+[2025-02-17 03:51:43,375] INFO [email_log.run:226] Checking log files now.
+[2025-02-17 03:51:43,375] INFO [email_log.run:230] No error found today.
+[2025-02-18 01:03:12,985] INFO [libEmissionCalc.output.output_db:24] Number of records: 772
+[2025-02-18 03:51:43,372] INFO [email_log.run:226] Checking log files now.
+[2025-02-18 03:51:43,388] INFO [email_log.run:230] No error found today.
+[2025-02-19 01:03:12,920] INFO [libEmissionCalc.output.output_db:24] Number of records: 761
+[2025-02-19 03:51:43,344] INFO [email_log.run:226] Checking log files now.
+[2025-02-19 03:51:43,359] INFO [email_log.run:230] No error found today.
+[2025-02-20 01:03:12,731] INFO [libEmissionCalc.output.output_db:24] Number of records: 757
+[2025-02-20 03:51:43,379] INFO [email_log.run:226] Checking log files now.
+[2025-02-20 03:51:43,379] INFO [email_log.run:230] No error found today.
+[2025-02-21 01:03:12,677] INFO [libEmissionCalc.output.output_db:24] Number of records: 771
+[2025-02-21 03:51:43,389] INFO [email_log.run:226] Checking log files now.
+[2025-02-21 03:51:43,389] INFO [email_log.run:230] No error found today.
+[2025-02-22 01:03:12,786] INFO [libEmissionCalc.output.output_db:24] Number of records: 778
+[2025-02-22 03:51:43,365] INFO [email_log.run:226] Checking log files now.
+[2025-02-22 03:51:43,381] INFO [email_log.run:230] No error found today.
+[2025-02-23 01:03:12,714] INFO [libEmissionCalc.output.output_db:24] Number of records: 699
+[2025-02-23 03:51:43,368] INFO [email_log.run:226] Checking log files now.
+[2025-02-23 03:51:43,384] INFO [email_log.run:230] No error found today.
+[2025-02-24 01:03:12,445] INFO [libEmissionCalc.output.output_db:24] Number of records: 542
+[2025-02-24 03:51:43,420] INFO [email_log.run:226] Checking log files now.
+[2025-02-24 03:51:43,436] INFO [email_log.run:230] No error found today.
+[2025-02-25 01:03:13,279] INFO [libEmissionCalc.output.output_db:24] Number of records: 792
+[2025-02-25 03:51:43,400] INFO [email_log.run:226] Checking log files now.
+[2025-02-25 03:51:43,415] INFO [email_log.run:230] No error found today.
+[2025-02-26 01:03:13,808] INFO [libEmissionCalc.output.output_db:24] Number of records: 791
+[2025-02-26 03:51:43,631] INFO [email_log.run:226] Checking log files now.
+[2025-02-26 03:51:43,631] INFO [email_log.run:230] No error found today.
+[2025-02-27 01:03:13,205] INFO [libEmissionCalc.output.output_db:24] Number of records: 797
+[2025-02-27 03:51:43,428] INFO [email_log.run:226] Checking log files now.
+[2025-02-27 03:51:43,443] INFO [email_log.run:230] No error found today.
+[2025-02-28 01:03:13,059] INFO [libEmissionCalc.output.output_db:24] Number of records: 802
+[2025-02-28 03:51:43,413] INFO [email_log.run:226] Checking log files now.
+[2025-02-28 03:51:43,429] INFO [email_log.run:230] No error found today.
+[2025-03-01 01:03:13,233] INFO [libEmissionCalc.output.output_db:24] Number of records: 788
+[2025-03-01 03:51:43,390] INFO [email_log.run:226] Checking log files now.
+[2025-03-01 03:51:43,390] INFO [email_log.run:230] No error found today.
+[2025-03-02 01:03:13,127] INFO [libEmissionCalc.output.output_db:24] Number of records: 707
+[2025-03-02 03:51:43,356] INFO [email_log.run:226] Checking log files now.
+[2025-03-02 03:51:43,371] INFO [email_log.run:230] No error found today.
+[2025-03-03 01:03:12,786] INFO [libEmissionCalc.output.output_db:24] Number of records: 548
+[2025-03-03 03:51:43,424] INFO [email_log.run:226] Checking log files now.
+[2025-03-03 03:51:43,439] INFO [email_log.run:230] No error found today.
+[2025-03-04 01:03:15,706] INFO [libEmissionCalc.output.output_db:24] Number of records: 784
+[2025-03-04 03:51:43,381] INFO [email_log.run:226] Checking log files now.
+[2025-03-04 03:51:43,381] INFO [email_log.run:230] No error found today.
+[2025-03-05 01:03:13,590] INFO [libEmissionCalc.output.output_db:24] Number of records: 805
+[2025-03-05 03:51:43,387] INFO [email_log.run:226] Checking log files now.
+[2025-03-05 03:51:43,402] INFO [email_log.run:230] No error found today.
+[2025-03-06 01:03:13,685] INFO [libEmissionCalc.output.output_db:24] Number of records: 804
+[2025-03-06 03:51:43,408] INFO [email_log.run:226] Checking log files now.
+[2025-03-06 03:51:43,423] INFO [email_log.run:230] No error found today.
+[2025-03-07 01:03:13,640] INFO [libEmissionCalc.output.output_db:24] Number of records: 817
+[2025-03-07 03:51:43,376] INFO [email_log.run:226] Checking log files now.
+[2025-03-07 03:51:43,376] INFO [email_log.run:230] No error found today.
+[2025-03-08 01:03:13,427] INFO [libEmissionCalc.output.output_db:24] Number of records: 809
+[2025-03-08 03:51:43,377] INFO [email_log.run:226] Checking log files now.
+[2025-03-08 03:51:43,377] INFO [email_log.run:230] No error found today.
+[2025-03-09 01:03:13,156] INFO [libEmissionCalc.output.output_db:24] Number of records: 721
+[2025-03-09 03:51:43,381] INFO [email_log.run:226] Checking log files now.
+[2025-03-09 03:51:43,381] INFO [email_log.run:230] No error found today.
+[2025-03-10 01:03:13,106] INFO [libEmissionCalc.output.output_db:24] Number of records: 550
+[2025-03-10 03:51:43,384] INFO [email_log.run:226] Checking log files now.
+[2025-03-10 03:51:43,400] INFO [email_log.run:230] No error found today.
+[2025-03-11 01:03:13,485] INFO [libEmissionCalc.output.output_db:24] Number of records: 803
+[2025-03-11 03:51:43,379] INFO [email_log.run:226] Checking log files now.
+[2025-03-11 03:51:43,379] INFO [email_log.run:230] No error found today.
+[2025-03-12 01:03:13,586] INFO [libEmissionCalc.output.output_db:24] Number of records: 780
+[2025-03-12 03:51:43,363] INFO [email_log.run:226] Checking log files now.
+[2025-03-12 03:51:43,379] INFO [email_log.run:230] No error found today.
+[2025-03-13 01:03:13,689] INFO [libEmissionCalc.output.output_db:24] Number of records: 796
+[2025-03-13 03:51:43,388] INFO [email_log.run:226] Checking log files now.
+[2025-03-13 03:51:43,388] INFO [email_log.run:230] No error found today.
+[2025-03-14 01:03:13,748] INFO [libEmissionCalc.output.output_db:24] Number of records: 775
+[2025-03-14 03:51:43,382] INFO [email_log.run:226] Checking log files now.
+[2025-03-14 03:51:43,397] INFO [email_log.run:230] No error found today.
+[2025-03-15 01:03:13,749] INFO [libEmissionCalc.output.output_db:24] Number of records: 783
+[2025-03-15 03:51:43,357] INFO [email_log.run:226] Checking log files now.
+[2025-03-15 03:51:43,357] INFO [email_log.run:230] No error found today.
+[2025-03-16 01:03:12,874] INFO [libEmissionCalc.output.output_db:24] Number of records: 696
+[2025-03-16 03:51:43,374] INFO [email_log.run:226] Checking log files now.
+[2025-03-16 03:51:43,374] INFO [email_log.run:230] No error found today.
+[2025-03-17 01:03:13,381] INFO [libEmissionCalc.output.output_db:24] Number of records: 547
+[2025-03-17 03:51:43,345] INFO [email_log.run:226] Checking log files now.
+[2025-03-17 03:51:43,345] INFO [email_log.run:230] No error found today.
+[2025-03-18 01:03:13,648] INFO [libEmissionCalc.output.output_db:24] Number of records: 762
+[2025-03-18 03:51:43,382] INFO [email_log.run:226] Checking log files now.
+[2025-03-18 03:51:43,398] INFO [email_log.run:230] No error found today.
+[2025-03-19 01:03:13,262] INFO [libEmissionCalc.output.output_db:24] Number of records: 787
+[2025-03-19 03:51:43,379] INFO [email_log.run:226] Checking log files now.
+[2025-03-19 03:51:43,394] INFO [email_log.run:230] No error found today.
+[2025-03-20 01:03:13,260] INFO [libEmissionCalc.output.output_db:24] Number of records: 786
+[2025-03-20 03:51:43,378] INFO [email_log.run:226] Checking log files now.
+[2025-03-20 03:51:43,394] INFO [email_log.run:230] No error found today.
+[2025-03-21 01:03:13,435] INFO [libEmissionCalc.output.output_db:24] Number of records: 762
+[2025-03-21 03:51:43,360] INFO [email_log.run:226] Checking log files now.
+[2025-03-21 03:51:43,360] INFO [email_log.run:230] No error found today.
+[2025-03-22 01:03:13,793] INFO [libEmissionCalc.output.output_db:24] Number of records: 785
+[2025-03-22 03:51:43,354] INFO [email_log.run:226] Checking log files now.
+[2025-03-22 03:51:43,354] INFO [email_log.run:230] No error found today.
+[2025-03-23 01:03:12,848] INFO [libEmissionCalc.output.output_db:24] Number of records: 691
+[2025-03-23 03:51:43,398] INFO [email_log.run:226] Checking log files now.
+[2025-03-23 03:51:43,398] INFO [email_log.run:230] No error found today.
+[2025-03-24 01:03:12,325] INFO [libEmissionCalc.output.output_db:24] Number of records: 548
+[2025-03-24 03:51:43,417] INFO [email_log.run:226] Checking log files now.
+[2025-03-24 03:51:43,432] INFO [email_log.run:230] No error found today.
+[2025-03-25 01:03:13,919] INFO [libEmissionCalc.output.output_db:24] Number of records: 762
+[2025-03-25 03:51:43,428] INFO [email_log.run:226] Checking log files now.
+[2025-03-25 03:51:43,428] INFO [email_log.run:230] No error found today.
+[2025-03-26 01:03:13,639] INFO [libEmissionCalc.output.output_db:24] Number of records: 778
+[2025-03-26 03:51:43,413] INFO [email_log.run:226] Checking log files now.
+[2025-03-26 03:51:43,428] INFO [email_log.run:230] No error found today.
+[2025-03-27 01:03:13,685] INFO [libEmissionCalc.output.output_db:24] Number of records: 772
+[2025-03-27 03:51:43,389] INFO [email_log.run:226] Checking log files now.
+[2025-03-27 03:51:43,389] INFO [email_log.run:230] No error found today.
+[2025-03-28 01:03:13,456] INFO [libEmissionCalc.output.output_db:24] Number of records: 791
+[2025-03-28 03:51:43,380] INFO [email_log.run:226] Checking log files now.
+[2025-03-28 03:51:43,396] INFO [email_log.run:230] No error found today.
+[2025-03-29 01:03:13,643] INFO [libEmissionCalc.output.output_db:24] Number of records: 776
+[2025-03-29 03:51:43,387] INFO [email_log.run:226] Checking log files now.
+[2025-03-29 03:51:43,403] INFO [email_log.run:230] No error found today.
+[2025-03-30 01:03:13,689] INFO [libEmissionCalc.output.output_db:24] Number of records: 694
+[2025-03-30 03:51:43,420] INFO [email_log.run:226] Checking log files now.
+[2025-03-30 03:51:43,428] INFO [email_log.run:230] No error found today.
+[2025-03-31 01:03:13,275] INFO [libEmissionCalc.output.output_db:24] Number of records: 538
+[2025-03-31 03:51:43,307] INFO [email_log.run:226] Checking log files now.
+[2025-03-31 03:51:43,307] INFO [email_log.run:230] No error found today.
+[2025-04-01 01:03:12,943] INFO [libEmissionCalc.output.output_db:24] Number of records: 522
+[2025-04-01 03:51:43,382] INFO [email_log.run:226] Checking log files now.
+[2025-04-01 03:51:43,382] INFO [email_log.run:230] No error found today.
+[2025-04-02 01:03:13,969] INFO [libEmissionCalc.output.output_db:24] Number of records: 712
+[2025-04-02 03:51:43,362] INFO [email_log.run:226] Checking log files now.
+[2025-04-02 03:51:43,378] INFO [email_log.run:230] No error found today.
+[2025-04-03 01:03:13,534] INFO [libEmissionCalc.output.output_db:24] Number of records: 765
+[2025-04-03 03:51:43,379] INFO [email_log.run:226] Checking log files now.
+[2025-04-03 03:51:43,379] INFO [email_log.run:230] No error found today.
+[2025-04-04 01:03:13,631] INFO [libEmissionCalc.output.output_db:24] Number of records: 795
+[2025-04-04 03:51:43,404] INFO [email_log.run:226] Checking log files now.
+[2025-04-04 03:51:43,404] INFO [email_log.run:230] No error found today.
+[2025-04-05 01:03:13,925] INFO [libEmissionCalc.output.output_db:24] Number of records: 788
+[2025-04-05 03:51:43,377] INFO [email_log.run:226] Checking log files now.
+[2025-04-05 03:51:43,377] INFO [email_log.run:230] No error found today.
+[2025-04-06 01:03:13,399] INFO [libEmissionCalc.output.output_db:24] Number of records: 689
+[2025-04-06 03:51:43,362] INFO [email_log.run:226] Checking log files now.
+[2025-04-06 03:51:43,366] INFO [email_log.run:230] No error found today.
+[2025-04-07 01:03:13,035] INFO [libEmissionCalc.output.output_db:24] Number of records: 522
+[2025-04-07 03:51:43,386] INFO [email_log.run:226] Checking log files now.
+[2025-04-07 03:51:43,386] INFO [email_log.run:230] No error found today.
+[2025-04-08 01:03:13,833] INFO [libEmissionCalc.output.output_db:24] Number of records: 778
+[2025-04-08 03:51:43,382] INFO [email_log.run:226] Checking log files now.
+[2025-04-08 03:51:43,382] INFO [email_log.run:230] No error found today.
+[2025-04-09 01:03:13,472] INFO [libEmissionCalc.output.output_db:24] Number of records: 796
+[2025-04-09 03:51:43,383] INFO [email_log.run:226] Checking log files now.
+[2025-04-09 03:51:43,399] INFO [email_log.run:230] No error found today.
+[2025-04-10 01:03:13,741] INFO [libEmissionCalc.output.output_db:24] Number of records: 780
+[2025-04-10 03:51:43,388] INFO [email_log.run:226] Checking log files now.
+[2025-04-10 03:51:43,388] INFO [email_log.run:230] No error found today.
+[2025-04-11 01:03:13,553] INFO [libEmissionCalc.output.output_db:24] Number of records: 792
+[2025-04-11 03:51:43,358] INFO [email_log.run:226] Checking log files now.
+[2025-04-11 03:51:43,358] INFO [email_log.run:230] No error found today.
+[2025-04-12 01:03:13,291] INFO [libEmissionCalc.output.output_db:24] Number of records: 784
+[2025-04-12 03:51:43,404] INFO [email_log.run:226] Checking log files now.
+[2025-04-12 03:51:43,404] INFO [email_log.run:230] No error found today.
+[2025-04-13 01:03:13,104] INFO [libEmissionCalc.output.output_db:24] Number of records: 690
+[2025-04-13 03:51:43,405] INFO [email_log.run:226] Checking log files now.
+[2025-04-13 03:51:43,405] INFO [email_log.run:230] No error found today.
+[2025-04-14 01:03:13,146] INFO [libEmissionCalc.output.output_db:24] Number of records: 518
+[2025-04-14 03:51:43,403] INFO [email_log.run:226] Checking log files now.
+[2025-04-14 03:51:43,419] INFO [email_log.run:230] No error found today.
+[2025-04-15 01:03:13,576] INFO [libEmissionCalc.output.output_db:24] Number of records: 801
+[2025-04-15 03:51:43,380] INFO [email_log.run:226] Checking log files now.
+[2025-04-15 03:51:43,380] INFO [email_log.run:230] No error found today.
+[2025-04-16 01:03:14,425] INFO [libEmissionCalc.output.output_db:24] Number of records: 810
+[2025-04-16 03:51:43,377] INFO [email_log.run:226] Checking log files now.
+[2025-04-16 03:51:43,377] INFO [email_log.run:230] No error found today.
+[2025-04-17 01:03:13,998] INFO [libEmissionCalc.output.output_db:24] Number of records: 807
+[2025-04-17 03:51:44,446] INFO [email_log.run:226] Checking log files now.
+[2025-04-17 03:51:44,446] INFO [email_log.run:230] No error found today.
+[2025-04-18 01:03:16,176] INFO [libEmissionCalc.output.output_db:24] Number of records: 799
+[2025-04-18 03:51:43,460] INFO [email_log.run:226] Checking log files now.
+[2025-04-18 03:51:43,460] INFO [email_log.run:230] No error found today.
+[2025-04-19 01:03:14,275] INFO [libEmissionCalc.output.output_db:24] Number of records: 567
+[2025-04-19 03:51:43,401] INFO [email_log.run:226] Checking log files now.
+[2025-04-19 03:51:43,479] INFO [email_log.run:230] No error found today.
+[2025-04-20 01:03:14,510] INFO [libEmissionCalc.output.output_db:24] Number of records: 687
+[2025-04-20 03:51:43,396] INFO [email_log.run:226] Checking log files now.
+[2025-04-20 03:51:43,411] INFO [email_log.run:230] No error found today.
+[2025-04-21 01:03:14,416] INFO [libEmissionCalc.output.output_db:24] Number of records: 545
+[2025-04-22 01:03:13,684] INFO [libEmissionCalc.output.output_db:24] Number of records: 787
+[2025-04-22 03:51:43,531] INFO [email_log.run:226] Checking log files now.
+[2025-04-22 03:51:43,546] INFO [email_log.run:230] No error found today.
+[2025-04-23 01:03:14,054] INFO [libEmissionCalc.output.output_db:24] Number of records: 805
+[2025-04-23 03:51:43,409] INFO [email_log.run:226] Checking log files now.
+[2025-04-23 03:51:43,409] INFO [email_log.run:230] No error found today.
+[2025-04-24 01:03:13,068] INFO [libEmissionCalc.output.output_db:24] Number of records: 815
+[2025-04-24 03:51:43,371] INFO [email_log.run:226] Checking log files now.
+[2025-04-24 03:51:43,371] INFO [email_log.run:230] No error found today.
+[2025-04-25 01:03:13,582] INFO [libEmissionCalc.output.output_db:24] Number of records: 813
+[2025-04-25 03:51:43,395] INFO [email_log.run:226] Checking log files now.
+[2025-04-25 03:51:43,411] INFO [email_log.run:230] No error found today.
+[2025-04-26 01:03:13,450] INFO [libEmissionCalc.output.output_db:24] Number of records: 800
+[2025-04-26 03:51:43,418] INFO [email_log.run:226] Checking log files now.
+[2025-04-26 03:51:43,430] INFO [email_log.run:230] No error found today.
+[2025-04-27 01:03:15,245] INFO [libEmissionCalc.output.output_db:24] Number of records: 721
+[2025-04-27 03:51:43,390] INFO [email_log.run:226] Checking log files now.
+[2025-04-27 03:51:43,390] INFO [email_log.run:230] No error found today.
+[2025-04-28 01:03:12,973] INFO [libEmissionCalc.output.output_db:24] Number of records: 549
+[2025-04-28 03:51:43,394] INFO [email_log.run:226] Checking log files now.
+[2025-04-28 03:51:43,410] INFO [email_log.run:230] No error found today.
+[2025-04-29 01:03:13,199] INFO [libEmissionCalc.output.output_db:24] Number of records: 790
+[2025-04-29 03:51:43,421] INFO [email_log.run:226] Checking log files now.
+[2025-04-29 03:51:43,431] INFO [email_log.run:230] No error found today.
+[2025-04-30 01:03:13,586] INFO [libEmissionCalc.output.output_db:24] Number of records: 806
+[2025-04-30 03:51:43,381] INFO [email_log.run:226] Checking log files now.
+[2025-04-30 03:51:43,396] INFO [email_log.run:230] No error found today.
+[2025-05-01 01:03:13,531] INFO [libEmissionCalc.output.output_db:24] Number of records: 813
+[2025-05-01 03:51:43,380] INFO [email_log.run:226] Checking log files now.
+[2025-05-01 03:51:43,396] INFO [email_log.run:230] No error found today.
+[2025-05-02 01:03:12,861] INFO [libEmissionCalc.output.output_db:24] Number of records: 575
+[2025-05-02 03:51:43,390] INFO [email_log.run:226] Checking log files now.
+[2025-05-02 03:51:43,406] INFO [email_log.run:230] No error found today.
+[2025-05-03 01:03:18,863] INFO [libEmissionCalc.output.output_db:24] Number of records: 788
+[2025-05-03 03:51:43,695] INFO [email_log.run:226] Checking log files now.
+[2025-05-03 03:51:43,695] INFO [email_log.run:230] No error found today.
+[2025-05-04 01:03:13,558] INFO [libEmissionCalc.output.output_db:24] Number of records: 591
+[2025-05-04 03:51:43,390] INFO [email_log.run:226] Checking log files now.
+[2025-05-04 03:51:43,406] INFO [email_log.run:230] No error found today.
+[2025-05-05 01:03:13,367] INFO [libEmissionCalc.output.output_db:24] Number of records: 577
+[2025-05-05 03:51:43,383] INFO [email_log.run:226] Checking log files now.
+[2025-05-05 03:51:43,399] INFO [email_log.run:230] No error found today.
+[2025-05-06 01:03:13,655] INFO [libEmissionCalc.output.output_db:24] Number of records: 794
+[2025-05-06 03:51:43,418] INFO [email_log.run:226] Checking log files now.
+[2025-05-06 03:51:43,418] INFO [email_log.run:230] No error found today.
+[2025-05-07 01:03:13,208] INFO [libEmissionCalc.output.output_db:24] Number of records: 794
+[2025-05-07 03:51:43,398] INFO [email_log.run:226] Checking log files now.
+[2025-05-07 03:51:43,398] INFO [email_log.run:230] No error found today.
+[2025-05-08 01:03:13,169] INFO [libEmissionCalc.output.output_db:24] Number of records: 806
+[2025-05-08 03:51:43,403] INFO [email_log.run:226] Checking log files now.
+[2025-05-08 03:51:43,403] INFO [email_log.run:230] No error found today.
+[2025-05-09 01:03:13,487] INFO [libEmissionCalc.output.output_db:24] Number of records: 797
+[2025-05-09 03:51:43,383] INFO [email_log.run:226] Checking log files now.
+[2025-05-09 03:51:43,383] INFO [email_log.run:230] No error found today.
+[2025-05-10 01:03:13,471] INFO [libEmissionCalc.output.output_db:24] Number of records: 803
+[2025-05-10 03:51:43,413] INFO [email_log.run:226] Checking log files now.
+[2025-05-10 03:51:43,413] INFO [email_log.run:230] No error found today.
+[2025-05-11 01:03:13,210] INFO [libEmissionCalc.output.output_db:24] Number of records: 695
+[2025-05-11 03:51:43,401] INFO [email_log.run:226] Checking log files now.
+[2025-05-11 03:51:43,417] INFO [email_log.run:230] No error found today.
+[2025-05-12 01:03:13,135] INFO [libEmissionCalc.output.output_db:24] Number of records: 551
+[2025-05-12 03:51:43,387] INFO [email_log.run:226] Checking log files now.
+[2025-05-12 03:51:43,402] INFO [email_log.run:230] No error found today.
+[2025-05-13 01:03:13,373] INFO [libEmissionCalc.output.output_db:24] Number of records: 530
+[2025-05-13 03:51:43,358] INFO [email_log.run:226] Checking log files now.
+[2025-05-13 03:51:43,358] INFO [email_log.run:230] No error found today.
+[2025-05-14 01:03:13,498] INFO [libEmissionCalc.output.output_db:24] Number of records: 787
+[2025-05-14 03:51:43,304] INFO [email_log.run:226] Checking log files now.
+[2025-05-14 03:51:43,320] INFO [email_log.run:230] No error found today.
+[2025-05-15 01:03:13,670] INFO [libEmissionCalc.output.output_db:24] Number of records: 803
+[2025-05-15 03:51:43,398] INFO [email_log.run:226] Checking log files now.
+[2025-05-15 03:51:43,398] INFO [email_log.run:230] No error found today.
+[2025-05-16 01:03:14,947] INFO [libEmissionCalc.output.output_db:24] Number of records: 806
+[2025-05-16 03:51:43,685] INFO [email_log.run:226] Checking log files now.
+[2025-05-16 03:51:43,700] INFO [email_log.run:230] No error found today.
+[2025-05-17 01:03:13,587] INFO [libEmissionCalc.output.output_db:24] Number of records: 798
+[2025-05-17 03:51:43,392] INFO [email_log.run:226] Checking log files now.
+[2025-05-17 03:51:43,408] INFO [email_log.run:230] No error found today.
+[2025-05-18 01:03:13,223] INFO [libEmissionCalc.output.output_db:24] Number of records: 732
+[2025-05-18 03:51:43,376] INFO [email_log.run:226] Checking log files now.
+[2025-05-18 03:51:43,391] INFO [email_log.run:230] No error found today.
+[2025-05-19 01:03:13,278] INFO [libEmissionCalc.output.output_db:24] Number of records: 564
+[2025-05-19 03:51:43,401] INFO [email_log.run:226] Checking log files now.
+[2025-05-19 03:51:43,401] INFO [email_log.run:230] No error found today.
+[2025-05-20 01:03:13,660] INFO [libEmissionCalc.output.output_db:24] Number of records: 798
+[2025-05-20 03:51:43,415] INFO [email_log.run:226] Checking log files now.
+[2025-05-20 03:51:43,430] INFO [email_log.run:230] No error found today.
+[2025-05-21 01:03:13,696] INFO [libEmissionCalc.output.output_db:24] Number of records: 809
+[2025-05-21 03:51:43,412] INFO [email_log.run:226] Checking log files now.
+[2025-05-21 03:51:43,412] INFO [email_log.run:230] No error found today.
+[2025-05-22 01:03:13,610] INFO [libEmissionCalc.output.output_db:24] Number of records: 815
+[2025-05-22 03:51:43,433] INFO [email_log.run:226] Checking log files now.
+[2025-05-22 03:51:43,433] INFO [email_log.run:230] No error found today.
+[2025-05-23 01:03:13,477] INFO [libEmissionCalc.output.output_db:24] Number of records: 805
+[2025-05-23 03:51:43,389] INFO [email_log.run:226] Checking log files now.
+[2025-05-23 03:51:43,405] INFO [email_log.run:230] No error found today.
+[2025-05-24 01:03:13,141] INFO [libEmissionCalc.output.output_db:24] Number of records: 816
+[2025-05-24 03:51:43,420] INFO [email_log.run:226] Checking log files now.
+[2025-05-24 03:51:43,420] INFO [email_log.run:230] No error found today.
+[2025-05-25 01:03:14,041] INFO [libEmissionCalc.output.output_db:24] Number of records: 743
+[2025-05-25 03:51:43,417] INFO [email_log.run:226] Checking log files now.
+[2025-05-25 03:51:43,433] INFO [email_log.run:230] No error found today.
+[2025-05-26 01:03:13,173] INFO [libEmissionCalc.output.output_db:24] Number of records: 582
+[2025-05-26 03:51:43,391] INFO [email_log.run:226] Checking log files now.
+[2025-05-26 03:51:43,391] INFO [email_log.run:230] No error found today.
+[2025-05-27 01:03:13,868] INFO [libEmissionCalc.output.output_db:24] Number of records: 825
+[2025-05-27 03:51:43,413] INFO [email_log.run:226] Checking log files now.
+[2025-05-27 03:51:43,413] INFO [email_log.run:230] No error found today.
+[2025-05-28 01:03:13,686] INFO [libEmissionCalc.output.output_db:24] Number of records: 832
+[2025-05-28 03:51:43,374] INFO [email_log.run:226] Checking log files now.
+[2025-05-28 03:51:43,390] INFO [email_log.run:230] No error found today.
+[2025-05-29 01:03:15,846] INFO [libEmissionCalc.output.output_db:24] Number of records: 839
+[2025-05-29 03:51:43,463] INFO [email_log.run:226] Checking log files now.
+[2025-05-29 03:51:43,587] INFO [email_log.run:230] No error found today.
+[2025-05-30 01:03:13,532] INFO [libEmissionCalc.output.output_db:24] Number of records: 815
+[2025-05-30 03:51:43,404] INFO [email_log.run:226] Checking log files now.
+[2025-05-30 03:51:43,420] INFO [email_log.run:230] No error found today.
+[2025-05-31 01:03:15,340] INFO [libEmissionCalc.output.output_db:24] Number of records: 813
+[2025-05-31 03:51:43,358] INFO [email_log.run:226] Checking log files now.
+[2025-05-31 03:51:43,483] INFO [email_log.run:230] No error found today.
+[2025-06-01 01:03:14,552] INFO [libEmissionCalc.output.output_db:24] Number of records: 741
+[2025-06-01 03:51:43,402] INFO [email_log.run:226] Checking log files now.
+[2025-06-01 03:51:43,480] INFO [email_log.run:230] No error found today.
+[2025-06-02 01:03:14,662] INFO [libEmissionCalc.output.output_db:24] Number of records: 574
+[2025-06-02 03:51:43,478] INFO [email_log.run:226] Checking log files now.
+[2025-06-02 03:51:43,665] INFO [email_log.run:230] No error found today.
+[2025-06-03 01:03:15,338] INFO [libEmissionCalc.output.output_db:24] Number of records: 815
+[2025-06-03 03:51:43,478] INFO [email_log.run:226] Checking log files now.
+[2025-06-03 03:51:43,712] INFO [email_log.run:230] No error found today.
+[2025-06-04 01:03:15,631] INFO [libEmissionCalc.output.output_db:24] Number of records: 827
+[2025-06-04 03:51:43,517] INFO [email_log.run:226] Checking log files now.
+[2025-06-04 03:51:43,689] INFO [email_log.run:230] No error found today.
+[2025-06-05 01:03:15,535] INFO [libEmissionCalc.output.output_db:24] Number of records: 838
+[2025-06-05 03:51:43,433] INFO [email_log.run:226] Checking log files now.
+[2025-06-05 03:51:43,557] INFO [email_log.run:230] No error found today.
+[2025-06-06 01:03:14,126] INFO [libEmissionCalc.output.output_db:24] Number of records: 836
+[2025-06-06 03:51:43,391] INFO [email_log.run:226] Checking log files now.
+[2025-06-06 03:51:43,407] INFO [email_log.run:230] No error found today.
+[2025-06-07 01:03:14,058] INFO [libEmissionCalc.output.output_db:24] Number of records: 798
+[2025-06-07 03:51:43,394] INFO [email_log.run:226] Checking log files now.
+[2025-06-07 03:51:43,394] INFO [email_log.run:230] No error found today.
+[2025-06-08 01:03:13,054] INFO [libEmissionCalc.output.output_db:24] Number of records: 572
+[2025-06-08 03:51:43,388] INFO [email_log.run:226] Checking log files now.
+[2025-06-08 03:51:43,404] INFO [email_log.run:230] No error found today.
+[2025-06-09 01:03:14,277] INFO [libEmissionCalc.output.output_db:24] Number of records: 544
+[2025-06-09 03:51:43,473] INFO [email_log.run:226] Checking log files now.
+[2025-06-09 03:51:43,614] INFO [email_log.run:230] No error found today.
+[2025-06-10 01:03:15,618] INFO [libEmissionCalc.output.output_db:24] Number of records: 792
+[2025-06-10 03:51:43,428] INFO [email_log.run:226] Checking log files now.
+[2025-06-10 03:51:43,538] INFO [email_log.run:230] No error found today.
+[2025-06-11 01:03:15,956] INFO [libEmissionCalc.output.output_db:24] Number of records: 805
+[2025-06-11 03:51:43,488] INFO [email_log.run:226] Checking log files now.
+[2025-06-11 03:51:43,582] INFO [email_log.run:230] No error found today.
+[2025-06-12 01:03:13,520] INFO [libEmissionCalc.output.output_db:24] Number of records: 807
+[2025-06-12 03:51:43,434] INFO [email_log.run:226] Checking log files now.
+[2025-06-12 03:51:43,434] INFO [email_log.run:230] No error found today.
+[2025-06-13 01:03:14,663] INFO [libEmissionCalc.output.output_db:24] Number of records: 819
+[2025-06-13 03:51:43,491] INFO [email_log.run:226] Checking log files now.
+[2025-06-13 03:51:43,741] INFO [email_log.run:230] No error found today.
+[2025-06-14 01:03:13,799] INFO [libEmissionCalc.output.output_db:24] Number of records: 817
+[2025-06-14 03:51:43,393] INFO [email_log.run:226] Checking log files now.
+[2025-06-14 03:51:43,408] INFO [email_log.run:230] No error found today.
+[2025-06-15 01:03:13,781] INFO [libEmissionCalc.output.output_db:24] Number of records: 733
+[2025-06-15 03:51:43,428] INFO [email_log.run:226] Checking log files now.
+[2025-06-15 03:51:43,428] INFO [email_log.run:230] No error found today.
+[2025-06-16 01:03:13,392] INFO [libEmissionCalc.output.output_db:24] Number of records: 577
+[2025-06-16 03:51:43,398] INFO [email_log.run:226] Checking log files now.
+[2025-06-16 03:51:43,398] INFO [email_log.run:230] No error found today.
+[2025-06-16 20:03:13,385] INFO [libEmissionCalc.output.output_db:24] Number of records: 816
+[2025-06-17 03:51:43,389] INFO [email_log.run:226] Checking log files now.
+[2025-06-17 03:51:43,404] INFO [email_log.run:230] No error found today.
+[2025-06-17 20:03:14,025] INFO [libEmissionCalc.output.output_db:24] Number of records: 811
+[2025-06-18 03:51:43,435] INFO [email_log.run:226] Checking log files now.
+[2025-06-18 03:51:43,450] INFO [email_log.run:230] No error found today.
+[2025-06-18 20:03:14,200] INFO [libEmissionCalc.output.output_db:24] Number of records: 824
+[2025-06-19 03:51:43,397] INFO [email_log.run:226] Checking log files now.
+[2025-06-19 03:51:43,413] INFO [email_log.run:230] No error found today.
+[2025-06-19 20:03:14,147] INFO [libEmissionCalc.output.output_db:24] Number of records: 827
+[2025-06-20 03:51:43,414] INFO [email_log.run:226] Checking log files now.
+[2025-06-20 03:51:43,414] INFO [email_log.run:230] No error found today.
+[2025-06-20 20:03:14,067] INFO [libEmissionCalc.output.output_db:24] Number of records: 834
+[2025-06-21 03:51:43,413] INFO [email_log.run:226] Checking log files now.
+[2025-06-21 03:51:43,413] INFO [email_log.run:230] No error found today.
+[2025-06-21 20:03:15,894] INFO [libEmissionCalc.output.output_db:24] Number of records: 712
+[2025-06-22 03:51:43,405] INFO [email_log.run:226] Checking log files now.
+[2025-06-22 03:51:43,405] INFO [email_log.run:230] No error found today.
+[2025-06-22 20:03:13,859] INFO [libEmissionCalc.output.output_db:24] Number of records: 585
+[2025-06-23 03:51:43,406] INFO [email_log.run:226] Checking log files now.
+[2025-06-23 03:51:43,406] INFO [email_log.run:230] No error found today.
+[2025-06-23 20:03:14,762] INFO [libEmissionCalc.output.output_db:24] Number of records: 831
+[2025-06-24 03:51:43,441] INFO [email_log.run:226] Checking log files now.
+[2025-06-24 03:51:43,457] INFO [email_log.run:230] No error found today.
+[2025-06-24 20:03:14,110] INFO [libEmissionCalc.output.output_db:24] Number of records: 802
+[2025-06-25 03:51:43,402] INFO [email_log.run:226] Checking log files now.
+[2025-06-25 03:51:43,418] INFO [email_log.run:230] No error found today.
+[2025-06-25 20:03:15,641] INFO [libEmissionCalc.output.output_db:24] Number of records: 808
+[2025-06-26 03:51:43,447] INFO [email_log.run:226] Checking log files now.
+[2025-06-26 03:51:43,447] INFO [email_log.run:230] No error found today.
+[2025-06-26 20:03:16,447] INFO [libEmissionCalc.output.output_db:24] Number of records: 819
+[2025-06-27 03:51:43,450] INFO [email_log.run:226] Checking log files now.
+[2025-06-27 03:51:43,450] INFO [email_log.run:230] No error found today.
+[2025-06-27 20:03:16,209] INFO [libEmissionCalc.output.output_db:24] Number of records: 807
+[2025-06-28 03:51:43,468] INFO [email_log.run:226] Checking log files now.
+[2025-06-28 03:51:43,468] INFO [email_log.run:230] No error found today.
+[2025-06-28 20:03:14,828] INFO [libEmissionCalc.output.output_db:24] Number of records: 734
+[2025-06-29 03:51:43,429] INFO [email_log.run:226] Checking log files now.
+[2025-06-29 03:51:43,445] INFO [email_log.run:230] No error found today.
+[2025-06-29 20:03:14,567] INFO [libEmissionCalc.output.output_db:24] Number of records: 568
+[2025-06-30 03:51:43,454] INFO [email_log.run:226] Checking log files now.
+[2025-06-30 03:51:43,454] INFO [email_log.run:230] No error found today.
+[2025-06-30 20:03:15,387] INFO [libEmissionCalc.output.output_db:24] Number of records: 790
+[2025-07-01 03:51:43,413] INFO [email_log.run:226] Checking log files now.
+[2025-07-01 03:51:43,413] INFO [email_log.run:230] No error found today.
+[2025-07-01 20:03:14,166] INFO [libEmissionCalc.output.output_db:24] Number of records: 795
+[2025-07-02 03:51:43,404] INFO [email_log.run:226] Checking log files now.
+[2025-07-02 03:51:43,404] INFO [email_log.run:230] No error found today.
+[2025-07-02 20:03:15,837] INFO [libEmissionCalc.output.output_db:24] Number of records: 788
+[2025-07-03 03:51:43,424] INFO [email_log.run:226] Checking log files now.
+[2025-07-03 03:51:43,424] INFO [email_log.run:230] No error found today.
+[2025-07-03 20:03:14,127] INFO [libEmissionCalc.output.output_db:24] Number of records: 803
+[2025-07-04 03:51:43,390] INFO [email_log.run:226] Checking log files now.
+[2025-07-04 03:51:43,406] INFO [email_log.run:230] No error found today.
+[2025-07-04 20:03:15,175] INFO [libEmissionCalc.output.output_db:24] Number of records: 792
+[2025-07-05 03:51:43,456] INFO [email_log.run:226] Checking log files now.
+[2025-07-05 03:51:43,471] INFO [email_log.run:230] No error found today.
+[2025-07-05 20:03:13,393] INFO [libEmissionCalc.output.output_db:24] Number of records: 695
+[2025-07-06 03:51:43,390] INFO [email_log.run:226] Checking log files now.
+[2025-07-06 03:51:43,390] INFO [email_log.run:230] No error found today.
+[2025-07-06 20:03:16,329] INFO [libEmissionCalc.output.output_db:24] Number of records: 571
+[2025-07-07 03:51:43,442] INFO [email_log.run:226] Checking log files now.
+[2025-07-07 03:51:43,458] INFO [email_log.run:230] No error found today.
+[2025-07-07 20:03:15,291] INFO [libEmissionCalc.output.output_db:24] Number of records: 770
+[2025-07-08 03:51:43,425] INFO [email_log.run:226] Checking log files now.
+[2025-07-08 03:51:43,425] INFO [email_log.run:230] No error found today.
+[2025-07-08 20:03:14,860] INFO [libEmissionCalc.output.output_db:24] Number of records: 786
+[2025-07-09 03:51:43,506] INFO [email_log.run:226] Checking log files now.
+[2025-07-09 03:51:43,506] INFO [email_log.run:230] No error found today.
+[2025-07-09 20:03:14,946] INFO [libEmissionCalc.output.output_db:24] Number of records: 787

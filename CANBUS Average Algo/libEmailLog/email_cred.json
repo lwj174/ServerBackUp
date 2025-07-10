@@ -1,0 +1,5 @@
+{"EMAIL_ALERT":{"email_server":"liwenjing@myascents.com",
+                "password":"wucqnfvygfwucwqi",
+                "server":"smtp.gmail.com",
+                "port":587,
+                "receiver_list":["liwenjing@myascents.com"]}}

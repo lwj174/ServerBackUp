@@ -1,0 +1,5 @@
+{"host":"192.168.9.132",
+"user":"datauser",
+"password":"datauser",
+"database":"fms",
+"port":3306}
